@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="/" rel="alternate"></link><link href="/feeds/education.atom.xml" rel="self"></link><id>/</id><updated>2014-09-29T04:54:00-07:00</updated><entry><title>Software Carpentry @ ASU</title><link href="/software-carpentry-asu.html" rel="alternate"></link><updated>2014-09-29T04:54:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-29:software-carpentry-asu.html</id><summary type="html">&lt;p&gt;As I mentioned in a &lt;a class="reference external" href="http://smallerthings.org/2014/09/software-carpentry-bootcamp-asu/"&gt;previous
+post&lt;/a&gt;,
+this weekend I participated in my first &lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software
+Carpentry&lt;/a&gt;bootcamp. I had the
+pleasure of meeting the instructors and all the other helpers involved
+on Friday&amp;nbsp;over pizza and beer, and in particular spent considerable time
+nerding out with &lt;a class="reference external" href="http://naupaka.net/"&gt;Naupaka&lt;/a&gt;&amp;nbsp;over all things vim
+and &lt;a class="reference external" href="http://vita.had.co.nz/papers/tidy-data.pdf"&gt;tidy data&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On Day 1, the topic of the morning was
+&lt;a class="reference external" href="http://www.r-project.org/"&gt;R&lt;/a&gt;. From what I understand, it was only
+recently that Software Carpentry decided to add R to their curriculum.
+Though I certainly learned plenty myself as I rushed about helping
+participants through small problems, there is a lot of good stuff (and
+plenty of potential)&amp;nbsp;here.&lt;/p&gt;
+&lt;p&gt;R is an analysis tool first and a programming language second. This
+makes it a pragmatic choice for researchers but still a difficult one to
+teach. We used&amp;nbsp;&lt;a class="reference external" href="http://www.rstudio.com/"&gt;RStudio&lt;/a&gt;&amp;nbsp;as the
+environment for introducing things, and this may have taken the edge off
+for the command-line averse. I didn&amp;#8217;t get a chance to follow along with
+the exercises too much myself, but I&amp;#8217;m particularly interested in
+learning more about the use of factors. If anyone has any resources for
+understanding what factors are, why they are useful, etc., I&amp;#8217;d love to
+hear about&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;That afternoon we switched topics to the shell, or more specifically
+&lt;a class="reference external" href="http://www.gnu.org/software/bash/"&gt;bash&lt;/a&gt;. The session started well
+enough, but given a distribution of participants that ranged from zero
+experience to intermediate, it proved difficult to please everyone.
+Also, as a note to anyone that does a bootcamp on the shell (or even any
+topic): &lt;em&gt;give a motivation behind everything you demonstrate, both in
+broad and immediate scope&lt;/em&gt;. Although it can be obvious why a given trick
+is useful to an experienced user, the novice can often be left wondering
+what benefit this has compared to what they already do to get work done.
+This is especially true for the shell, since 90% of work done in the
+shell is moving around a file system, which most scientists already
+accomplish by clicking around a file browser. People have to see a clear
+advantage to adopt new&amp;nbsp;practices.&lt;/p&gt;
+&lt;p&gt;Day 2 (today) started off with &lt;a class="reference external" href="http://git-scm.com/"&gt;git&lt;/a&gt;. The
+instructors did well to put extensive focus on giving motivation for
+git&amp;#8217;s use, given the feedback from the previous day&amp;#8217;s session on the
+shell. This was especially important for git, since for many scientists
+it is considered to be non-essential in the toolbox of software things.
+Software Carpentry hopes to change&amp;nbsp;this.&lt;/p&gt;
+&lt;p&gt;The gist: &lt;strong&gt;git is great for more than just code.&lt;/strong&gt; Though originally
+produced to address the needs of the software community, as a version
+control system git works particularly well for paper writing, alone or
+with collaborators. And even though git is optimal when working with
+text-only files, it is perfectly happy to store away&amp;nbsp;&lt;strong&gt;anything&lt;/strong&gt; you
+like and version control it.&amp;nbsp;Further, pushing the materials used to
+build a manuscript to a public repository host like
+&lt;a class="reference external" href="https://github.com/"&gt;GitHub&lt;/a&gt;&amp;nbsp;is a great way to address the
+well-acknowledged problem of &lt;a class="reference external" href="http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852"&gt;reproducibility in
+science&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;During the afternoon we turned our focus to
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/SQL"&gt;&lt;span class="caps"&gt;SQL&lt;/span&gt;&lt;/a&gt;, using
+an&amp;nbsp;&lt;a class="reference external" href="http://www.sqlite.org/"&gt;SQLite&lt;/a&gt;&amp;nbsp;database as our toy case for
+running queries against. I was running out of steam by about this point,
+and I mainly focused on helping the folks on Windows to get sqlite3
+working under &lt;a class="reference external" href="http://msysgit.github.io/"&gt;Git Bash&lt;/a&gt;&amp;nbsp;(not hard, but
+for beginners running around the filesystem is an expensive&amp;nbsp;operation).&lt;/p&gt;
+&lt;p&gt;Overall, I&amp;#8217;m happy I got to help put this on and I hope to be involved
+in a growing &lt;span class="caps"&gt;SC&lt;/span&gt; community here at &lt;span class="caps"&gt;ASU&lt;/span&gt; in the very near future. Assuming
+space is still available, I&amp;#8217;m also hoping to attend &lt;a class="reference external" href="http://ivory.idyll.org/blog/2014-davis-swc-training.html"&gt;Titus Brown&amp;#8217;s
+instructor training in Davis this coming
+January&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks to everyone involved! Looking forward to&amp;nbsp;more!&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary><category term="bash"></category><category term="git"></category><category term="R"></category><category term="Software Carpentry"></category><category term="SQL"></category></entry><entry><title>Upcoming Software Carpentry bootcamp @ ASU</title><link href="/software-carpentry-bootcamp-asu.html" rel="alternate"></link><updated>2014-09-23T23:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-23:software-carpentry-bootcamp-asu.html</id><summary type="html">&lt;p&gt;This weekend (September 26 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 27), I will be partaking in my first
+&lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt;&amp;nbsp;bootcamp, held
+right here at &lt;span class="caps"&gt;ASU&lt;/span&gt;. I will be helping with some of the sessions myself,
+but otherwise I look forward to learning some R and &lt;span class="caps"&gt;SQL&lt;/span&gt; skills with some
+like-minded&amp;nbsp;peers.&lt;/p&gt;
+&lt;p&gt;For the uninitiated, Software Carpentry is an organization that actively
+works to improve the computational, programming, and data analysis
+skills of scientists. This is more than necessary, because though
+science often pushes the boundaries of what computing can accomplish,
+good software practices are relatively rare among scientists. Version
+control, code readability, and software design is becoming increasingly
+important as the complexity of computational science&amp;nbsp;increases.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ll post about my experiences after having attended the two-day
+bootcamp. If you are interested in attending yourself, &lt;a class="reference external" href="http://naupaka.github.io/2014-09-27-asu/"&gt;register
+here&lt;/a&gt;. It should be a good&amp;nbsp;time!&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary></entry></feed>

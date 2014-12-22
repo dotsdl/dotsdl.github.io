@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2014-10-16T05:21:00-07:00</updated><entry><title>Paywalls and lost knowledge</title><link href="/paywalls-and-lost-knowledge.html" rel="alternate"></link><updated>2014-10-16T05:21:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-10-16:paywalls-and-lost-knowledge.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s taken me a while, but I now have a system for keeping up with
+(however poorly) the exponentially growing scientific literature. I&amp;#8217;ll
+expound more on my method of choice in another post, but no matter how
+fast I try to get at processing papers, new and old, one thing disrupts
+my flow more than any other:&amp;nbsp;&lt;a class="reference external" href="http://en.wikipedia.org/wiki/Paywall"&gt;paywalls&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Every scientist knows them well. You&amp;#8217;re reading papers, and you see a
+detail that piques your curiosity enough to check the reference. You
+then type as much of the title as you care to into Google and click on
+the first link that looks like it might have a manuscript behind it. Oh
+no, it&amp;#8217;s just &lt;a class="reference external" href="http://www.ncbi.nlm.nih.gov/pubmed"&gt;Pubmed&lt;/a&gt;. But it
+has links to the full text!&amp;nbsp;Click.&lt;/p&gt;
+&lt;p&gt;Quickly you scan for a &lt;span class="caps"&gt;PDF&lt;/span&gt; download link. But there&amp;#8217;s a number next to
+it. &lt;strong&gt;For the low, low price of $28.00, this article could be yours!&lt;/strong&gt;
+Or you could &amp;quot;rent&amp;quot; it for $4.00, whatever that&amp;nbsp;means.&lt;/p&gt;
+&lt;p&gt;I have roughly 400 articles in my Zotero library, and it&amp;#8217;s growing fast.
+Luckily I&amp;#8217;m privileged to have access to
+&lt;a class="reference external" href="https://lib.asu.edu/"&gt;&lt;span class="caps"&gt;ASU&lt;/span&gt;&lt;/a&gt;&amp;#8216;s library subscriptions for most (though
+certainly not all) journals, but this requires me to engage in further
+gymnastics to use the proxy server to get&amp;nbsp;access.&lt;/p&gt;
+&lt;p&gt;By the time I&amp;#8217;ve pulled an article (or more likely several) into my
+library, I&amp;#8217;ve forgotten the context of why I cared to find it&amp;nbsp;in the
+first place. I may have jotted down a note or two, but the full moment
+is lost, possibly forever. What&amp;#8217;s worse, though I may be able to scrap
+most of my thoughts back together and carry on with chasing the rabbit
+down the idea hole, imagine being a student at a smaller university with
+a less-endowed library. That idea that led to the chase may never find
+what it needs to bother&amp;nbsp;pursuing.&lt;/p&gt;
+&lt;p&gt;Every paywall represents an opportunity lost, if not several. They are
+plaque in the arteries of science, slowing down everyone. Luckily the
+scene is changing with the efforts of the &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Open_access"&gt;open access
+movement&lt;/a&gt;. It&amp;#8217;s certainly&amp;nbsp;time.&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary><category term="openaccess"></category></entry><entry><title>Software Carpentry @ ASU</title><link href="/software-carpentry-asu.html" rel="alternate"></link><updated>2014-09-29T04:54:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-29:software-carpentry-asu.html</id><summary type="html">&lt;p&gt;As I mentioned in a &lt;a class="reference external" href="http://smallerthings.org/2014/09/software-carpentry-bootcamp-asu/"&gt;previous
+post&lt;/a&gt;,
+this weekend I participated in my first &lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software
+Carpentry&lt;/a&gt;bootcamp. I had the
+pleasure of meeting the instructors and all the other helpers involved
+on Friday&amp;nbsp;over pizza and beer, and in particular spent considerable time
+nerding out with &lt;a class="reference external" href="http://naupaka.net/"&gt;Naupaka&lt;/a&gt;&amp;nbsp;over all things vim
+and &lt;a class="reference external" href="http://vita.had.co.nz/papers/tidy-data.pdf"&gt;tidy data&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On Day 1, the topic of the morning was
+&lt;a class="reference external" href="http://www.r-project.org/"&gt;R&lt;/a&gt;. From what I understand, it was only
+recently that Software Carpentry decided to add R to their curriculum.
+Though I certainly learned plenty myself as I rushed about helping
+participants through small problems, there is a lot of good stuff (and
+plenty of potential)&amp;nbsp;here.&lt;/p&gt;
+&lt;p&gt;R is an analysis tool first and a programming language second. This
+makes it a pragmatic choice for researchers but still a difficult one to
+teach. We used&amp;nbsp;&lt;a class="reference external" href="http://www.rstudio.com/"&gt;RStudio&lt;/a&gt;&amp;nbsp;as the
+environment for introducing things, and this may have taken the edge off
+for the command-line averse. I didn&amp;#8217;t get a chance to follow along with
+the exercises too much myself, but I&amp;#8217;m particularly interested in
+learning more about the use of factors. If anyone has any resources for
+understanding what factors are, why they are useful, etc., I&amp;#8217;d love to
+hear about&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;That afternoon we switched topics to the shell, or more specifically
+&lt;a class="reference external" href="http://www.gnu.org/software/bash/"&gt;bash&lt;/a&gt;. The session started well
+enough, but given a distribution of participants that ranged from zero
+experience to intermediate, it proved difficult to please everyone.
+Also, as a note to anyone that does a bootcamp on the shell (or even any
+topic): &lt;em&gt;give a motivation behind everything you demonstrate, both in
+broad and immediate scope&lt;/em&gt;. Although it can be obvious why a given trick
+is useful to an experienced user, the novice can often be left wondering
+what benefit this has compared to what they already do to get work done.
+This is especially true for the shell, since 90% of work done in the
+shell is moving around a file system, which most scientists already
+accomplish by clicking around a file browser. People have to see a clear
+advantage to adopt new&amp;nbsp;practices.&lt;/p&gt;
+&lt;p&gt;Day 2 (today) started off with &lt;a class="reference external" href="http://git-scm.com/"&gt;git&lt;/a&gt;. The
+instructors did well to put extensive focus on giving motivation for
+git&amp;#8217;s use, given the feedback from the previous day&amp;#8217;s session on the
+shell. This was especially important for git, since for many scientists
+it is considered to be non-essential in the toolbox of software things.
+Software Carpentry hopes to change&amp;nbsp;this.&lt;/p&gt;
+&lt;p&gt;The gist: &lt;strong&gt;git is great for more than just code.&lt;/strong&gt; Though originally
+produced to address the needs of the software community, as a version
+control system git works particularly well for paper writing, alone or
+with collaborators. And even though git is optimal when working with
+text-only files, it is perfectly happy to store away&amp;nbsp;&lt;strong&gt;anything&lt;/strong&gt; you
+like and version control it.&amp;nbsp;Further, pushing the materials used to
+build a manuscript to a public repository host like
+&lt;a class="reference external" href="https://github.com/"&gt;GitHub&lt;/a&gt;&amp;nbsp;is a great way to address the
+well-acknowledged problem of &lt;a class="reference external" href="http://www.nature.com/news/announcement-reducing-our-irreproducibility-1.12852"&gt;reproducibility in
+science&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;During the afternoon we turned our focus to
+&lt;a class="reference external" href="http://en.wikipedia.org/wiki/SQL"&gt;&lt;span class="caps"&gt;SQL&lt;/span&gt;&lt;/a&gt;, using
+an&amp;nbsp;&lt;a class="reference external" href="http://www.sqlite.org/"&gt;SQLite&lt;/a&gt;&amp;nbsp;database as our toy case for
+running queries against. I was running out of steam by about this point,
+and I mainly focused on helping the folks on Windows to get sqlite3
+working under &lt;a class="reference external" href="http://msysgit.github.io/"&gt;Git Bash&lt;/a&gt;&amp;nbsp;(not hard, but
+for beginners running around the filesystem is an expensive&amp;nbsp;operation).&lt;/p&gt;
+&lt;p&gt;Overall, I&amp;#8217;m happy I got to help put this on and I hope to be involved
+in a growing &lt;span class="caps"&gt;SC&lt;/span&gt; community here at &lt;span class="caps"&gt;ASU&lt;/span&gt; in the very near future. Assuming
+space is still available, I&amp;#8217;m also hoping to attend &lt;a class="reference external" href="http://ivory.idyll.org/blog/2014-davis-swc-training.html"&gt;Titus Brown&amp;#8217;s
+instructor training in Davis this coming
+January&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Thanks to everyone involved! Looking forward to&amp;nbsp;more!&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary><category term="bash"></category><category term="git"></category><category term="R"></category><category term="Software Carpentry"></category><category term="SQL"></category></entry><entry><title>Creationism’s beef with scientific theory</title><link href="/creationisms-beef-with-scientific-theory.html" rel="alternate"></link><updated>2014-09-25T20:48:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-25:creationisms-beef-with-scientific-theory.html</id><summary type="html">&lt;p&gt;This post was originally posted to Facebook. It was a&amp;nbsp;response to a
+creationist friend who posted a video of another creationist attempting
+to discredit the usual set of scientific theories. I felt I should share
+it for others because I&amp;#8217;m terminally optimistic, and I needed the&amp;nbsp;outlet.&lt;/p&gt;
+&lt;p&gt;One&amp;nbsp;recurring mistake made by creationists when trying to discredit
+science is this: it is assumed that science must observe &lt;strong&gt;every&lt;/strong&gt;
+phenomenon a theory posits to take place in order for that theory to be
+considered valid. When a creationist says repeatedly that &amp;quot;there is no
+evidence for &lt;span class="caps"&gt;THEORY&lt;/span&gt; X&amp;quot;, he is oftentimes operating on his standard that
+&lt;strong&gt;every&lt;/strong&gt; prediction of that theory must be tested. This is unreasonable
+for science to progress; worse, it&amp;#8217;s shown itself to be &lt;strong&gt;unnecessary&lt;/strong&gt;.
+The value of theory is that it is better than a library of observations;
+it gives greater insight into what&amp;#8217;s actually&amp;nbsp;happening.&lt;/p&gt;
+&lt;p&gt;To use an analogy: many of my students in an introductory physics course
+spent&amp;nbsp;the beginning of the semester doing physics problems with
+arithmetic. They were literally throwing numbers around in ways that
+&amp;quot;made sense&amp;quot; to them until they arrived at an (often wrong) answer.&amp;nbsp;To
+break them of this, I began asking questions that required some higher
+level thought. Instead of &amp;quot;how high on the wall does the projectile
+strike&amp;quot; given some set of initial conditions, I asked &amp;quot;what is the
+minimum speed with which the projectile must be fired in order to go
+over the wall.&amp;quot; Those that tried arithmetic quickly realized they&amp;#8217;d have
+to trial-and-error it to get the answer, which would be&amp;nbsp;silly.&lt;/p&gt;
+&lt;p&gt;The ones that solved the problem instead used the theory they had
+learned in class (2D kinematics, a purely descriptive part of classical
+mechanics), algebraically finding the speed I asked for. I then asked
+them how this speed changes with firing distance, and they could answer
+this question by looking at the symbolic answer. I even asked them how
+quickly this speed changes with a change in firing angle, effectively
+requiring a&amp;nbsp;derivative.&lt;/p&gt;
+&lt;p&gt;When creationists demand evidence for every single facet or prediction
+of a theory, they are demanding that science do the arithmetic&amp;#8230;&lt;strong&gt;for
+every variation of the problem the theory is addressing&lt;/strong&gt;. This is
+unreasonable. Worse, it doesn&amp;#8217;t really tell us much more information
+about the set of phenomena we are addressing, just like solving the same
+problem over and over again with different numbers doesn&amp;#8217;t really give
+insight into what&amp;#8217;s actually&amp;nbsp;happening.&lt;/p&gt;
+&lt;p&gt;With a finite number of scientists working on a much larger set of
+problems (and growing, as we are able to probe more and more of nature),
+our limited resources are better spent proving the principles and then
+moving on, using those principles to discover ever more. Quantum
+mechanics has probably less direct evidence for it than biological
+evolution, but we didn&amp;#8217;t waste time endlessly testing every boring case
+the theory presents. Instead, we took advantage of it to build materials
+that now allow the computer you are using to post emoticons on&amp;nbsp;Facebook.&lt;/p&gt;
+&lt;p&gt;So, thank a theory&amp;#8230;or something. And have a nice&amp;nbsp;evening.&lt;/p&gt;
+</summary></entry><entry><title>Upcoming Software Carpentry bootcamp @ ASU</title><link href="/software-carpentry-bootcamp-asu.html" rel="alternate"></link><updated>2014-09-23T23:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-23:software-carpentry-bootcamp-asu.html</id><summary type="html">&lt;p&gt;This weekend (September 26 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 27), I will be partaking in my first
+&lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt;&amp;nbsp;bootcamp, held
+right here at &lt;span class="caps"&gt;ASU&lt;/span&gt;. I will be helping with some of the sessions myself,
+but otherwise I look forward to learning some R and &lt;span class="caps"&gt;SQL&lt;/span&gt; skills with some
+like-minded&amp;nbsp;peers.&lt;/p&gt;
+&lt;p&gt;For the uninitiated, Software Carpentry is an organization that actively
+works to improve the computational, programming, and data analysis
+skills of scientists. This is more than necessary, because though
+science often pushes the boundaries of what computing can accomplish,
+good software practices are relatively rare among scientists. Version
+control, code readability, and software design is becoming increasingly
+important as the complexity of computational science&amp;nbsp;increases.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ll post about my experiences after having attended the two-day
+bootcamp. If you are interested in attending yourself, &lt;a class="reference external" href="http://naupaka.github.io/2014-09-27-asu/"&gt;register
+here&lt;/a&gt;. It should be a good&amp;nbsp;time!&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary></entry><entry><title>Ahoy there!</title><link href="/ahoy-there.html" rel="alternate"></link><updated>2014-09-22T00:02:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-22:ahoy-there.html</id><summary type="html">&lt;p&gt;The last time I tried keeping a blog was when I was around 20 years old,
+and the topics of the day were mainly of&amp;nbsp;interest to only 20-year-old
+me. I was just coming out as gay, learning to deal with feelings I
+didn&amp;#8217;t understand. I spent a lot of time thinking about religion, and
+plenty of time arguing about it with others. I didn&amp;#8217;t know much about
+the world, but I was trying&amp;nbsp;learn.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m now 25, and in my fourth year of graduate school. I am invested in
+my research (plenty to write about on that soon), and I am in a stable
+and fulfilling relationship. Grad school started out (very) rough, but
+I&amp;#8217;ve found my niche. I&amp;#8217;m generally&amp;nbsp;pleased.&lt;/p&gt;
+&lt;p&gt;I decided it was appropriate to start sharing my thoughts and
+experiences with others. It&amp;#8217;s not something I&amp;#8217;m used to, so it may take
+a post or two before I&amp;#8217;ve found&amp;nbsp;my groove. Some posts will be about
+science (both content and sociology thereof) and software development;
+others will chronicle my teaching and thoughts on the state of
+education. Yet others will be personal updates. I think there is space
+for all of this&amp;nbsp;here.&lt;/p&gt;
+&lt;p&gt;Plenty to&amp;nbsp;come.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;david&lt;/li&gt;
+&lt;/ul&gt;
+</summary></entry></feed>
