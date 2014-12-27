@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2014-10-16T05:21:00-07:00</updated><entry><title>Paywalls and lost knowledge</title><link href="/paywalls-and-lost-knowledge.html" rel="alternate"></link><updated>2014-10-16T05:21:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-10-16:paywalls-and-lost-knowledge.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s taken me a while, but I now have a system for keeping up with
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2014-12-26T16:23:00-07:00</updated><entry><title>Attempting to be open in a closed field</title><link href="/open-in-a-closed-field.html" rel="alternate"></link><updated>2014-12-26T16:23:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-12-26:open-in-a-closed-field.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been following &lt;a class="reference external" href="http://ivory.idyll.org/blog/"&gt;Titus Brown&amp;#8217;s blog&lt;/a&gt; for a
+little while now, and this blog is part of an effort to emulate his
+(&lt;a class="reference external" href="http://ivory.idyll.org/blog/blog-practicing-open-science.html"&gt;relatively conservative&lt;/a&gt;)
+brand of open science. However, if it wasn&amp;#8217;t obvious from my lack of new content over
+the past few months, I&amp;#8217;ve been in a bit of a rut. What&amp;nbsp;gives?&lt;/p&gt;
+&lt;p&gt;Well, for one thing I don&amp;#8217;t &amp;quot;own&amp;quot; the research I produce. Or, at the very
+least, I don&amp;#8217;t &lt;em&gt;completely&lt;/em&gt; own it. There are my collaborators to think about,
+not to mention my &lt;span class="caps"&gt;PI&lt;/span&gt;, whose ultimate permission I must obtain to openly
+discuss the things we are hammering on. And in a competitive field, there is
+the real fear (valid? I&amp;#8217;m not sure) of being&amp;nbsp;scooped.&lt;/p&gt;
+&lt;p&gt;So, what to do? I think the landscape science operates in is changing, and the way science
+is done &lt;strong&gt;must&lt;/strong&gt; change in order to cope. Funding is becoming &lt;a class="reference external" href="http://www.nature.com/nmeth/journal/v11/n11/full/nmeth.3171.html"&gt;harder to get&lt;/a&gt;.
+Reproducing scientific work, even those dependent on software alone, is
+difficult. And these days obtaining data is becoming less of a problem; instead,
+in many fields the emerging problem is how to cope with data glut, which itself
+&lt;a class="reference external" href="http://jakevdp.github.io/blog/2014/08/22/hacking-academia/"&gt;requires a new skill set&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The open science movement seeks in part to take the lessons from the open source
+software movement and apply them to science. This is particularly salient for someone
+in my field, since in simulation-based work raw and distilled data is both generated
+by software. Open science finds little contradiction&amp;nbsp;here.&lt;/p&gt;
+&lt;p&gt;But the more competitive a field is, the more perceived incentive there is to keep
+work bottled up until the &lt;em&gt;big reveal&lt;/em&gt; in the form of a journal publication. Rarely
+this publication includes the full data set (in my field, this would mean raw simulation
+trajectories and the input parameters) and all code (mainly analysis code, though
+not all molecular dynamics codes are open source). What&amp;#8217;s more, the main input
+to our simulations are experimental structures, and the crystallography community
+is known to be &lt;em&gt;very&lt;/em&gt; competitive. We are thus constrained by our experimentalist
+collaborators&amp;#8217;&amp;nbsp;needs.&lt;/p&gt;
+&lt;p&gt;If anything, I&amp;#8217;ll be using this space to share what I can about my work, especially
+ideas with regard to software and scalable analysis (with a bent toward applications
+to molecular dynamics problems). Change in science is slow, but I&amp;#8217;ll try to do my
+part&amp;nbsp;here.&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary><category term="openaccess"></category><category term="open science"></category></entry><entry><title>Paywalls and lost knowledge</title><link href="/paywalls-and-lost-knowledge.html" rel="alternate"></link><updated>2014-10-16T05:21:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-10-16:paywalls-and-lost-knowledge.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s taken me a while, but I now have a system for keeping up with
 (however poorly) the exponentially growing scientific literature. I&amp;#8217;ll
 expound more on my method of choice in another post, but no matter how
 fast I try to get at processing papers, new and old, one thing disrupts
