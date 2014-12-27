@@ -26,48 +26,67 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="/open-in-a-closed-field.html">Attempting to be open in a (mostly) closed&nbsp;field</a></h1>
+                    <h1 class="entry-title"><a href="/from-wordpress-to-pelican.html">From Wordpress to&nbsp;Pelican</a></h1>
 <footer class="post-info">
         <span>Fri 26 December 2014</span>
-<span>| tags: <a href="/tag/openaccess.html">openaccess</a><a href="/tag/open-science.html">open science</a></span>
-</footer><!-- /.post-info --><p>I&#8217;ve been following <a class="reference external" href="http://ivory.idyll.org/blog/">Titus Brown&#8217;s blog</a> for a
-little while now, and this blog is part of an effort to emulate his
-(<a class="reference external" href="http://ivory.idyll.org/blog/blog-practicing-open-science.html">relatively conservative</a>)
-brand of open science. However, if it wasn&#8217;t obvious from my lack of new content over
-the past few months, I&#8217;ve been in a bit of a rut. What&nbsp;gives?</p>
-<p>Well, for one thing I don&#8217;t &quot;own&quot; the research I produce. Or, at the very
-least, I don&#8217;t <em>completely</em> own it. There are my collaborators to think about,
-not to mention my <span class="caps">PI</span>, whose ultimate permission I must obtain to openly
-discuss the things we are hammering on. And in a competitive field, there is
-the real fear (valid? I&#8217;m not sure) of being&nbsp;scooped.</p>
-<p>So, what to do? I think the landscape science operates in is changing, and the way science
-is done <strong>must</strong> change in order to cope. Funding is becoming <a class="reference external" href="http://www.nature.com/nmeth/journal/v11/n11/full/nmeth.3171.html">harder to get</a>.
-Reproducing scientific work, even those dependent on software alone, is
-difficult. And these days obtaining data is becoming less of a problem; instead,
-in many fields the emerging problem is how to cope with data glut, which itself
-<a class="reference external" href="http://jakevdp.github.io/blog/2014/08/22/hacking-academia/">requires a new skill set</a>.</p>
-<p>The open science movement seeks in part to take the lessons from the open source
-software movement and apply them to science. This is particularly salient for someone
-in my field, since in simulation-based work raw and distilled data is both generated
-by software. Open science finds little contradiction&nbsp;here.</p>
-<p>But the more competitive a field is, the more perceived incentive there is to keep
-work bottled up until the <em>big reveal</em> in the form of a journal publication. Rarely
-this publication includes the full data set (in my field, this would mean raw simulation
-trajectories and the input parameters) and all code (mainly analysis code, though
-not all molecular dynamics codes are open source). What&#8217;s more, the main input
-to our simulations are experimental structures, and the crystallography community
-is known to be <em>very</em> competitive. We are thus constrained by our experimentalist
-collaborators&#8217;&nbsp;needs.</p>
-<p>If anything, I&#8217;ll be using this space to share what I can about my work, especially
-ideas with regard to software and scalable analysis (with a bent toward applications
-to molecular dynamics problems). Change in science is slow, but I&#8217;ll try to do my
-part&nbsp;here.</p>
-<p>&#8212;&nbsp;david</p>
-<p><a href="/open-in-a-closed-field.html#disqus_thread">comments</a></p>                </article>
+<span>| tags: <a href="/tag/blogging.html">blogging</a><a href="/tag/pelican.html">pelican</a><a href="/tag/wordpress.html">wordpress</a></span>
+</footer><!-- /.post-info --><p>Back in September I decided to begin sharing some of my thoughts on science,
+software, and education by blogging regularly on my exploits. I&#8217;d previously
+built a website on top of <a class="reference external" href="https://wordpress.org/">Wordpress</a> for
+<a class="reference external" href="http://sundial.physics.asu.edu">Sundial</a>, so I decided to go with that
+<span class="caps">CMS</span>. I purchased a domain name through <a class="reference external" href="https://www.godaddy.com/">GoDaddy</a>,
+and out of convenience purchased Wordpress hosting through them as&nbsp;well.</p>
+<p>Wordpress is a fine <span class="caps">CMS</span>, but I despised writing in the built-in editor. I&#8217;m
+a vim nerd, and really wanted to write in plaintext in my editor of choice.
+Also, I wanted to start sharing code snippets and <a class="reference external" href="http://ipython.org/notebook.html">iPython notebooks</a>, and Wordpress was appearing an awkward
+choice at best for&nbsp;this.</p>
+<p>Enter <a class="reference external" href="http://blog.getpelican.com/">pelican</a>, a static site generator
+written in Python that uses ReStructuredText as the markup of choice
+for articles. It took a little time to set up, but most of this was
+spent trying to approximate my old blog&#8217;s look by way of a <a class="reference external" href="https://github.com/dotsdl/pelican-bluemoon">custom theme</a>.</p>
+<p>If you&#8217;re interested in blogging with a statically-generated site through
+pelican, start by installing the python module locally with&nbsp;pip:</p>
+<pre class="literal-block">
+pip install --user pelican
+</pre>
+<p>Then build a skeleton that includes everything you need to get started&nbsp;with:</p>
+<pre class="literal-block">
+pelican-quickstart
+</pre>
+<p>The <a class="reference external" href="http://docs.getpelican.com/">pelican docs</a> have up-to-date information
+on how to&nbsp;proceed.</p>
+<p>Since pelican generates static html files, they can be cheaply hosted. In fact,
+<a class="reference external" href="https://github.com">GitHub</a> provides free page hosting via <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>. I created a <a class="reference external" href="https://github.com/dotsdl/dotsdl.github.io">repository for my site</a> and edited the Makefile included
+in my pelican project directory to point to it. This allows me to regenerate
+and publish my static site&nbsp;with:</p>
+<pre class="literal-block">
+make github
+</pre>
+<p>It doesn&#8217;t get much easier. I&#8217;m very&nbsp;pleased.</p>
+<p><a href="/from-wordpress-to-pelican.html#disqus_thread">comments</a></p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/open-in-a-closed-field.html" rel="bookmark"
+                           title="Permalink to Attempting to be open in a (mostly) closed field">Attempting to be open in a (mostly) closed&nbsp;field</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Fri 26 December 2014</span>
+<span>| tags: <a href="/tag/openaccess.html">openaccess</a><a href="/tag/open-science.html">open science</a></span>
+</footer><!-- /.post-info -->                <p>I&#8217;ve been following <a class="reference external" href="http://ivory.idyll.org/blog/">Titus Brown&#8217;s blog</a> for a
+little while now, and this blog is part of an effort to emulate his
+(<a class="reference external" href="http://ivory.idyll.org/blog/blog-practicing-open-science.html">relatively conservative</a>)
+brand of open science. However, if it wasn&#8217;t obvious from my lack of new content over
+the past few months, I&#8217;ve been ...</p>
+                <a class="readmore" href="/open-in-a-closed-field.html">read more</a>
+<p><a href="/open-in-a-closed-field.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
