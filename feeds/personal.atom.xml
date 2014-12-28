@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="/" rel="alternate"></link><link href="/feeds/personal.atom.xml" rel="self"></link><id>/</id><updated>2014-12-26T22:15:00-07:00</updated><entry><title>From Wordpress to Pelican</title><link href="/from-wordpress-to-pelican.html" rel="alternate"></link><updated>2014-12-26T22:15:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-12-26:from-wordpress-to-pelican.html</id><summary type="html">&lt;p&gt;Back in September I decided to begin sharing some of my thoughts on science,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/personal.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2014-12-26T22:15:00-07:00</updated><entry><title>From Wordpress to Pelican</title><link href="http://smallerthings.org/from-wordpress-to-pelican.html" rel="alternate"></link><updated>2014-12-26T22:15:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-12-26:from-wordpress-to-pelican.html</id><summary type="html">&lt;p&gt;Back in September I decided to begin sharing some of my thoughts on science,
 software, and education by blogging regularly on my exploits. I&amp;#8217;d previously
 built a website on top of &lt;a class="reference external" href="https://wordpress.org/"&gt;Wordpress&lt;/a&gt; for
 &lt;a class="reference external" href="http://sundial.physics.asu.edu"&gt;Sundial&lt;/a&gt;, so I decided to go with that
@@ -32,7 +32,9 @@ and publish my static site&amp;nbsp;with:&lt;/p&gt;
 make github
 &lt;/pre&gt;
 &lt;p&gt;It doesn&amp;#8217;t get much easier. I&amp;#8217;m very&amp;nbsp;pleased.&lt;/p&gt;
-</summary><category term="blogging"></category><category term="pelican"></category><category term="wordpress"></category></entry><entry><title>Ahoy there!</title><link href="/ahoy-there.html" rel="alternate"></link><updated>2014-09-22T00:02:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-22:ahoy-there.html</id><summary type="html">&lt;p&gt;The last time I tried keeping a blog was when I was around 20 years old,
+&lt;p&gt;&lt;span class="caps"&gt;EDIT&lt;/span&gt;: I have added my &lt;a class="reference external" href="https://github.com/dotsdl/smallerthings"&gt;blog source to GitHub&lt;/a&gt;. Perhaps if you&amp;#8217;re having trouble
+getting something working it will be of&amp;nbsp;help.&lt;/p&gt;
+</summary><category term="blogging"></category><category term="pelican"></category><category term="wordpress"></category></entry><entry><title>Ahoy there!</title><link href="http://smallerthings.org/ahoy-there.html" rel="alternate"></link><updated>2014-09-22T00:02:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-09-22:ahoy-there.html</id><summary type="html">&lt;p&gt;The last time I tried keeping a blog was when I was around 20 years old,
 and the topics of the day were mainly of&amp;nbsp;interest to only 20-year-old
 me. I was just coming out as gay, learning to deal with feelings I
 didn&amp;#8217;t understand. I spent a lot of time thinking about religion, and

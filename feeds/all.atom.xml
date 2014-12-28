@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2014-12-26T22:15:00-07:00</updated><entry><title>From Wordpress to Pelican</title><link href="/from-wordpress-to-pelican.html" rel="alternate"></link><updated>2014-12-26T22:15:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-12-26:from-wordpress-to-pelican.html</id><summary type="html">&lt;p&gt;Back in September I decided to begin sharing some of my thoughts on science,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/all.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2014-12-26T22:15:00-07:00</updated><entry><title>From Wordpress to Pelican</title><link href="http://smallerthings.org/from-wordpress-to-pelican.html" rel="alternate"></link><updated>2014-12-26T22:15:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-12-26:from-wordpress-to-pelican.html</id><summary type="html">&lt;p&gt;Back in September I decided to begin sharing some of my thoughts on science,
 software, and education by blogging regularly on my exploits. I&amp;#8217;d previously
 built a website on top of &lt;a class="reference external" href="https://wordpress.org/"&gt;Wordpress&lt;/a&gt; for
 &lt;a class="reference external" href="http://sundial.physics.asu.edu"&gt;Sundial&lt;/a&gt;, so I decided to go with that
@@ -32,7 +32,9 @@ and publish my static site&amp;nbsp;with:&lt;/p&gt;
 make github
 &lt;/pre&gt;
 &lt;p&gt;It doesn&amp;#8217;t get much easier. I&amp;#8217;m very&amp;nbsp;pleased.&lt;/p&gt;
-</summary><category term="blogging"></category><category term="pelican"></category><category term="wordpress"></category></entry><entry><title>Attempting to be open in a (mostly) closed field</title><link href="/open-in-a-closed-field.html" rel="alternate"></link><updated>2014-12-26T16:23:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-12-26:open-in-a-closed-field.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been following &lt;a class="reference external" href="http://ivory.idyll.org/blog/"&gt;Titus Brown&amp;#8217;s blog&lt;/a&gt; for a
+&lt;p&gt;&lt;span class="caps"&gt;EDIT&lt;/span&gt;: I have added my &lt;a class="reference external" href="https://github.com/dotsdl/smallerthings"&gt;blog source to GitHub&lt;/a&gt;. Perhaps if you&amp;#8217;re having trouble
+getting something working it will be of&amp;nbsp;help.&lt;/p&gt;
+</summary><category term="blogging"></category><category term="pelican"></category><category term="wordpress"></category></entry><entry><title>Attempting to be open in a (mostly) closed field</title><link href="http://smallerthings.org/open-in-a-closed-field.html" rel="alternate"></link><updated>2014-12-26T16:23:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-12-26:open-in-a-closed-field.html</id><summary type="html">&lt;p&gt;I&amp;#8217;ve been following &lt;a class="reference external" href="http://ivory.idyll.org/blog/"&gt;Titus Brown&amp;#8217;s blog&lt;/a&gt; for a
 little while now, and this blog is part of an effort to emulate his
 (&lt;a class="reference external" href="http://ivory.idyll.org/blog/blog-practicing-open-science.html"&gt;relatively conservative&lt;/a&gt;)
 brand of open science. However, if it wasn&amp;#8217;t obvious from my lack of new content over
@@ -65,7 +67,7 @@ ideas with regard to software and scalable analysis (with a bent toward applicat
 to molecular dynamics problems). Change in science is slow, but I&amp;#8217;ll try to do my
 part&amp;nbsp;here.&lt;/p&gt;
 &lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
-</summary><category term="openaccess"></category><category term="open science"></category></entry><entry><title>Paywalls and lost knowledge</title><link href="/paywalls-and-lost-knowledge.html" rel="alternate"></link><updated>2014-10-16T05:21:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-10-16:paywalls-and-lost-knowledge.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s taken me a while, but I now have a system for keeping up with
+</summary><category term="openaccess"></category><category term="open science"></category></entry><entry><title>Paywalls and lost knowledge</title><link href="http://smallerthings.org/paywalls-and-lost-knowledge.html" rel="alternate"></link><updated>2014-10-16T05:21:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-10-16:paywalls-and-lost-knowledge.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s taken me a while, but I now have a system for keeping up with
 (however poorly) the exponentially growing scientific literature. I&amp;#8217;ll
 expound more on my method of choice in another post, but no matter how
 fast I try to get at processing papers, new and old, one thing disrupts
@@ -97,7 +99,7 @@ plaque in the arteries of science, slowing down everyone. Luckily the
 scene is changing with the efforts of the &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Open_access"&gt;open access
 movement&lt;/a&gt;. It&amp;#8217;s certainly&amp;nbsp;time.&lt;/p&gt;
 &lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
-</summary><category term="openaccess"></category></entry><entry><title>Software Carpentry @ ASU</title><link href="/software-carpentry-asu.html" rel="alternate"></link><updated>2014-09-29T04:54:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-29:software-carpentry-asu.html</id><summary type="html">&lt;p&gt;As I mentioned in a &lt;a class="reference external" href="http://smallerthings.org/2014/09/software-carpentry-bootcamp-asu/"&gt;previous
+</summary><category term="openaccess"></category></entry><entry><title>Software Carpentry @ ASU</title><link href="http://smallerthings.org/software-carpentry-asu.html" rel="alternate"></link><updated>2014-09-29T04:54:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-09-29:software-carpentry-asu.html</id><summary type="html">&lt;p&gt;As I mentioned in a &lt;a class="reference external" href="http://smallerthings.org/2014/09/software-carpentry-bootcamp-asu/"&gt;previous
 post&lt;/a&gt;,
 this weekend I participated in my first &lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software
 Carpentry&lt;/a&gt;bootcamp. I had the
@@ -163,7 +165,7 @@ instructor training in Davis this coming
 January&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Thanks to everyone involved! Looking forward to&amp;nbsp;more!&lt;/p&gt;
 &lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
-</summary><category term="bash"></category><category term="git"></category><category term="R"></category><category term="Software Carpentry"></category><category term="SQL"></category></entry><entry><title>Creationism’s beef with scientific theory</title><link href="/creationisms-beef-with-scientific-theory.html" rel="alternate"></link><updated>2014-09-25T20:48:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-25:creationisms-beef-with-scientific-theory.html</id><summary type="html">&lt;p&gt;This post was originally posted to Facebook. It was a&amp;nbsp;response to a
+</summary><category term="bash"></category><category term="git"></category><category term="R"></category><category term="Software Carpentry"></category><category term="SQL"></category></entry><entry><title>Creationism’s beef with scientific theory</title><link href="http://smallerthings.org/creationisms-beef-with-scientific-theory.html" rel="alternate"></link><updated>2014-09-25T20:48:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-09-25:creationisms-beef-with-scientific-theory.html</id><summary type="html">&lt;p&gt;This post was originally posted to Facebook. It was a&amp;nbsp;response to a
 creationist friend who posted a video of another creationist attempting
 to discredit the usual set of scientific theories. I felt I should share
 it for others because I&amp;#8217;m terminally optimistic, and I needed the&amp;nbsp;outlet.&lt;/p&gt;
@@ -209,7 +211,7 @@ evolution, but we didn&amp;#8217;t waste time endlessly testing every boring cas
 the theory presents. Instead, we took advantage of it to build materials
 that now allow the computer you are using to post emoticons on&amp;nbsp;Facebook.&lt;/p&gt;
 &lt;p&gt;So, thank a theory&amp;#8230;or something. And have a nice&amp;nbsp;evening.&lt;/p&gt;
-</summary></entry><entry><title>Upcoming Software Carpentry bootcamp @ ASU</title><link href="/software-carpentry-bootcamp-asu.html" rel="alternate"></link><updated>2014-09-23T23:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-23:software-carpentry-bootcamp-asu.html</id><summary type="html">&lt;p&gt;This weekend (September 26 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 27), I will be partaking in my first
+</summary></entry><entry><title>Upcoming Software Carpentry bootcamp @ ASU</title><link href="http://smallerthings.org/software-carpentry-bootcamp-asu.html" rel="alternate"></link><updated>2014-09-23T23:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-09-23:software-carpentry-bootcamp-asu.html</id><summary type="html">&lt;p&gt;This weekend (September 26 &lt;span class="amp"&gt;&amp;amp;&lt;/span&gt; 27), I will be partaking in my first
 &lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt;&amp;nbsp;bootcamp, held
 right here at &lt;span class="caps"&gt;ASU&lt;/span&gt;. I will be helping with some of the sessions myself,
 but otherwise I look forward to learning some R and &lt;span class="caps"&gt;SQL&lt;/span&gt; skills with some
@@ -225,7 +227,7 @@ important as the complexity of computational science&amp;nbsp;increases.&lt;/p&g
 bootcamp. If you are interested in attending yourself, &lt;a class="reference external" href="http://naupaka.github.io/2014-09-27-asu/"&gt;register
 here&lt;/a&gt;. It should be a good&amp;nbsp;time!&lt;/p&gt;
 &lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
-</summary></entry><entry><title>Ahoy there!</title><link href="/ahoy-there.html" rel="alternate"></link><updated>2014-09-22T00:02:00-07:00</updated><author><name>dotsdl</name></author><id>tag:,2014-09-22:ahoy-there.html</id><summary type="html">&lt;p&gt;The last time I tried keeping a blog was when I was around 20 years old,
+</summary></entry><entry><title>Ahoy there!</title><link href="http://smallerthings.org/ahoy-there.html" rel="alternate"></link><updated>2014-09-22T00:02:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-09-22:ahoy-there.html</id><summary type="html">&lt;p&gt;The last time I tried keeping a blog was when I was around 20 years old,
 and the topics of the day were mainly of&amp;nbsp;interest to only 20-year-old
 me. I was just coming out as gay, learning to deal with feelings I
 didn&amp;#8217;t understand. I spent a lot of time thinking about religion, and
