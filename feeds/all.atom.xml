@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/all.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2014-12-26T22:15:00-07:00</updated><entry><title>From Wordpress to Pelican</title><link href="http://smallerthings.org/from-wordpress-to-pelican.html" rel="alternate"></link><updated>2014-12-26T22:15:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-12-26:from-wordpress-to-pelican.html</id><summary type="html">&lt;p&gt;Back in September I decided to begin sharing some of my thoughts on science,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/all.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2015-02-11T22:45:00-07:00</updated><entry><title>Bumming around Baltimore; or, the Biophysical Society Annual Meeting 2015</title><link href="http://smallerthings.org/2015-biophysical-society-annual-meeting.html" rel="alternate"></link><updated>2015-02-11T22:45:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-02-11:2015-biophysical-society-annual-meeting.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s been a while since I last wrote a blog post, and this is for a couple
+(very good) reasons. First, I&amp;#8217;ve been hard at work on a &lt;a class="reference external" href="http://github.com/dotsdl/MDSynthesis"&gt;software package for
+making molecular dynamics data exploration more manageable&lt;/a&gt;. More on that in another post to
+come soon. Second, I had a major conference to prepare for, this being the
+&lt;a class="reference external" href="http://www.biophysics.org/2015meeting"&gt;Biophysical Society Annual Meeting in Baltimore&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I gave a talk at this meeting about our recent work on &lt;a class="reference external" href="http://dx.doi.org/10.1085/jgp.201411219"&gt;sodium proton
+antiporters&lt;/a&gt;. The talk was
+well-received and the questions allowed me to clarify details that I probably
+flew through during the 12 minutes I had to speak. I&amp;#8217;m very happy to have
+had the opportunity to share my work to a full&amp;nbsp;room.&lt;/p&gt;
+&lt;p&gt;Though the talk was a success, for me this last week was more a personal test
+in how quickly I can produce new data and distill useful information from it. I
+spent a significant amount of time over winter break and the first bit of
+January restructuring my workflow, and I am now significantly faster at this.
+It isn&amp;#8217;t just pipeline, either; the new approach allows me to effectively
+explore my data to generate new inferences and quickly test&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;As an example: I discovered what would become a key element of my talk on
+Saturday night, and I gave that talk on Monday. It was a bit too much like
+playing with fire than I&amp;#8217;d like to risk in future meetings, but it was
+well-worth it this time. The fast turn-around itself is encouraging, since it&amp;#8217;s
+looking to be an indication of a very productive&amp;nbsp;year.&lt;/p&gt;
+&lt;p&gt;The meeting also brought me in contact with a host of great peers (and giants)
+in the community. I&amp;#8217;m glad I got to meet the faces to so many names in such
+a short period of time. I had great discussions and made new&amp;nbsp;friends.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ll be spending the next few days relaxing in &lt;span class="caps"&gt;D.C.&lt;/span&gt; with some friends, but
+I&amp;#8217;m looking forward to getting back to the lab. Plenty of fresh ideas to work
+with in the coming year. Despite being physically exhausted, I am Very pleased
+with my time in&amp;nbsp;Baltimore.&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary><category term="conferences"></category><category term="talks"></category></entry><entry><title>From Wordpress to Pelican</title><link href="http://smallerthings.org/from-wordpress-to-pelican.html" rel="alternate"></link><updated>2014-12-26T22:15:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-12-26:from-wordpress-to-pelican.html</id><summary type="html">&lt;p&gt;Back in September I decided to begin sharing some of my thoughts on science,
 software, and education by blogging regularly on my exploits. I&amp;#8217;d previously
 built a website on top of &lt;a class="reference external" href="https://wordpress.org/"&gt;Wordpress&lt;/a&gt; for
 &lt;a class="reference external" href="http://sundial.physics.asu.edu"&gt;Sundial&lt;/a&gt;, so I decided to go with that
