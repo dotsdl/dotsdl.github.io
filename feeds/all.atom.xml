@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/all.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2015-03-25T10:00:00-07:00</updated><entry><title>I’m now a Software Carpentry Instructor!</title><link href="http://smallerthings.org/2015-software-carpentry-instructor.html" rel="alternate"></link><updated>2015-03-25T10:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-03-25:2015-software-carpentry-instructor.html</id><summary type="html">&lt;p&gt;Back in January I had the privilege to attend an in-person &lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt; instructor training in Davis, &lt;span class="caps"&gt;CA&lt;/span&gt;, hosted by
-&lt;cite&gt;Titus Brown &amp;lt;http://ivory.idyll.org/blog/&amp;gt;__&lt;/cite&gt;. Software Carpentry is a
+&lt;a class="reference external" href="http://ivory.idyll.org/blog/"&gt;Titus Brown&lt;/a&gt;. Software Carpentry is a
 non-profit volunteer organization that puts on &amp;quot;bootcamps&amp;quot; at institutions all
 over the world to teach best practices for building and using software to do
 science efficiently and reproducibly. The three-day training helped to improve
