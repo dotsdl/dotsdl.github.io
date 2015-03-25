@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/education.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2014-09-29T04:54:00-07:00</updated><entry><title>Software Carpentry @ ASU</title><link href="http://smallerthings.org/software-carpentry-asu.html" rel="alternate"></link><updated>2014-09-29T04:54:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-09-29:software-carpentry-asu.html</id><summary type="html">&lt;p&gt;As I mentioned in a &lt;a class="reference external" href="http://smallerthings.org/2014/09/software-carpentry-bootcamp-asu/"&gt;previous
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/education.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2015-03-25T10:00:00-07:00</updated><entry><title>I’m now a Software Carpentry Instructor!</title><link href="http://smallerthings.org/2015-software-carpentry-instructor.html" rel="alternate"></link><updated>2015-03-25T10:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-03-25:2015-software-carpentry-instructor.html</id><summary type="html">&lt;p&gt;Back in January I had the privilege to attend an in-person &lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt; instructor training in Davis, &lt;span class="caps"&gt;CA&lt;/span&gt;, hosted by
+&lt;cite&gt;Titus Brown &amp;lt;http://ivory.idyll.org/blog/&amp;gt;__&lt;/cite&gt;. Software Carpentry is a
+non-profit volunteer organization that puts on &amp;quot;bootcamps&amp;quot; at institutions all
+over the world to teach best practices for building and using software to do
+science efficiently and reproducibly. The three-day training helped to improve
+my own awareness of how people learn the technical skills we teach. I also met
+many great people doing awesome work in the open science&amp;nbsp;community.&lt;/p&gt;
+&lt;p&gt;On Monday, I gave a five-minute lightning lesson as an introduction to Python
+to &lt;a class="reference external" href="http://third-bit.com/"&gt;Greg Wilson&lt;/a&gt;, completing the final requirement
+for becoming an instructor. I&amp;#8217;m looking forward to teaching bootcamps here at
+&lt;span class="caps"&gt;ASU&lt;/span&gt; this year and next, and hopefully getting out a bit to teach some elsewhere
+in the country. I also hope to contribute to the efforts of &lt;a class="reference external" href="http://datacarpentry.org/"&gt;Data Carpentry&lt;/a&gt; with material specific to working with molecular
+dynamics data. I&amp;#8217;d be keen to dicuss this topic with anyone else who&amp;#8217;s
+interested. There&amp;#8217;s a lot that could be done on this&amp;nbsp;front.&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary><category term="teaching"></category><category term="swc"></category><category term="software"></category></entry><entry><title>Software Carpentry @ ASU</title><link href="http://smallerthings.org/software-carpentry-asu.html" rel="alternate"></link><updated>2014-09-29T04:54:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-09-29:software-carpentry-asu.html</id><summary type="html">&lt;p&gt;As I mentioned in a &lt;a class="reference external" href="http://smallerthings.org/2014/09/software-carpentry-bootcamp-asu/"&gt;previous
 post&lt;/a&gt;,
 this weekend I participated in my first &lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software
 Carpentry&lt;/a&gt;bootcamp. I had the
