@@ -1,5 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/all.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2015-05-13T18:00:00-07:00</updated><entry><title>Upcoming Software Carpentry workshop at Oklahoma State University</title><link href="http://smallerthings.org/2015-software-carpentry-osu.html" rel="alternate"></link><updated>2015-05-13T18:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-05-13:2015-software-carpentry-osu.html</id><summary type="html">&lt;p&gt;In two weeks from today I&amp;#8217;ll be in Stillwater, Oklahoma, teaching at my first
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/all.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2015-05-30T18:00:00-07:00</updated><entry><title>Software Carpentry workshop at Oklahoma State University post-mortem</title><link href="http://smallerthings.org/2015-software-carpentry-osu-postmortem.html" rel="alternate"></link><updated>2015-05-30T18:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-05-30:2015-software-carpentry-osu-postmortem.html</id><summary type="html">&lt;p&gt;This week I taught my first &lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt; workshop at Oklahoma State
+University. The workshop had been in such demand that we had a total of four
+instructors, including &lt;a class="reference external" href="http://www.jduck.net/"&gt;Jonah Duckles&lt;/a&gt;, &lt;a class="reference external" href="http://k8hert.blogspot.com/"&gt;Kate Hertweck&lt;/a&gt;, &lt;a class="reference external" href="https://about.me/timtom"&gt;Thomas Guignard&lt;/a&gt;,
+and myself. I arrived at the hotel close to 2am the first day of the workshop,
+and was running on nespresso during most of the morning&amp;nbsp;session.&lt;/p&gt;
+&lt;p&gt;Though originally Thomas and I were set to teach one room together, due to
+flight troubles Jonah took over the session on the Unix shell that kicked
+things off. I spent most of the time fixing issues with GitBash (usually
+fixed by reinstalling it) and helping people connect to the network (curse
+those certificates!), but these issues didn&amp;#8217;t affect most of our learners. I
+was able to spend at least a little time watching Jonah teach, too, and
+I can say I learned a few things myself (e.g. that &lt;tt class="docutils literal"&gt;tr&lt;/tt&gt; is a&amp;nbsp;thing!).&lt;/p&gt;
+&lt;p&gt;I taught the session on &lt;a class="reference external" href="http://www.python.org"&gt;Python&lt;/a&gt;, which was split into two parts over the
+two days. This decision was made at the cost of omitting &lt;span class="caps"&gt;SQL&lt;/span&gt; for Day 2. It
+worked out well because even though I went too fast the first day (this was
+the dominant complaint from feedback), we still only barely touched on
+&lt;a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html"&gt;functions&lt;/a&gt; by the end of it. The second day&amp;#8217;s session was entirely filled
+by the second half of material, which built on that of the&amp;nbsp;first.&lt;/p&gt;
+&lt;p&gt;This was my first time teaching the &lt;span class="caps"&gt;SWC&lt;/span&gt; Python lesson, and since it&amp;#8217;s become an
+indispensable tool for doing my own research, I made use of the &lt;a class="reference external" href="http://ipython.org/"&gt;iPython Notebook&lt;/a&gt;.
+To help combat the problem of learners getting behind and needing to see content
+that I&amp;#8217;ve since scrolled past, I did all my work out of a &lt;a class="reference external" href="http://dropbox.com"&gt;Dropbox&lt;/a&gt; folder
+and shared a link to my notebook file on the etherpad. Although a good idea, the
+biggest problem was that most learners couldn&amp;#8217;t figure out how to view the file,
+since downloading and clicking on it usually results in it being opened in a
+text editor (they&amp;#8217;re &lt;span class="caps"&gt;JSON&lt;/span&gt; files), leading to more confusion than answers.
+What&amp;#8217;s more, it&amp;#8217;s hard for many learners to find their working directory (where
+they&amp;#8217;re working in a GitBash / terminal shell session) in the graphical file
+manager, so telling them to download the file and move it to the directory
+their notebook session is running from results mostly in blank&amp;nbsp;stares.&lt;/p&gt;
+&lt;p&gt;Fortunately one of our helpers added the notebook link to &lt;a class="reference external" href="http://nbviewer.ipython.org/"&gt;NBViewer&lt;/a&gt;, which
+renders the notebook directly in the browser so the students didn&amp;#8217;t need to
+bother with the file at all. This required some fiddling to ensure that
+NBViewer actually picked up the updates whenever I saved my working notebook,
+but otherwise it worked &lt;em&gt;extremely well&lt;/em&gt;. The students very much appreciated
+being able to click the nbviewer link in the etherpad and view my entire
+running notebook, hitting refresh to see it as it updates. I should note,
+however, that the time between me saving and the updated notebook showing up on
+refresh was at least a couple minutes; Thomas did some troubleshooting on this
+front to try and fix this, but I don&amp;#8217;t think we managed much better than this.
+But I&amp;#8217;ll take that over nothing!&amp;nbsp;:D&lt;/p&gt;
+&lt;p&gt;At the time of this writing, &lt;a class="reference external" href="http://nbviewer.ipython.org/urls/dl.dropbox.com/s/2l7aktn0lb5uu8t/inflammation-analysis.ipynb?flush_cache=true"&gt;the link is still active&lt;/a&gt;; I&amp;#8217;ll finish
+annotating the notebook and archive a version here&amp;nbsp;soon.&lt;/p&gt;
+&lt;p&gt;After the session on Day 1, I cleaned up the working notebook. I didn&amp;#8217;t
+add anything that wasn&amp;#8217;t discussed in the session, but instead recorded more
+of my commentary in the notebook itself since there wasn&amp;#8217;t time to record
+it live. The learners appreciated this the next morning, especially with
+the NBViewer updates, since they could refer back to what we had done
+in case their notebooks were missing things we would need that&amp;nbsp;day.&lt;/p&gt;
+&lt;p&gt;I made a conscious effort on Day 2 to slooooow doooowwn, and I think I succeeded.
+We ended up making it to the goal, which is how to write Python scripts that
+behave like shell commands (showing that shell commands are &lt;em&gt;not&lt;/em&gt; magic, and
+you, &lt;span class="caps"&gt;YES&lt;/span&gt; &lt;span class="caps"&gt;YOU&lt;/span&gt;!, can write your own!). The feedback was generally more positive
+on this day, and the discussions that followed indicate that people were happy
+with what they had spent the time&amp;nbsp;learning.&lt;/p&gt;
+&lt;p&gt;Thomas closed out the day with a lesson on Git. Despite it being his first
+time teaching that particular lesson (it didn&amp;#8217;t show!), he went at a good pace
+and we were able to get through pair-wise collaboration on a publicly hosted
+git repository (using &lt;a class="reference external" href="http://github.com"&gt;GitHub&lt;/a&gt;). Among the teaching tools
+I plan to steal from him is his analogy of commits as group photos. That is,
+putting things in the staging area can be thought of as bringing people into
+the frame of the photo (and perhaps excluding others), while the commit is
+taking the photo itself and then clearing the&amp;nbsp;frame.&lt;/p&gt;
+&lt;p&gt;It was great to meet and learn from the learners, helpers, and my fellow
+instructors. I got the full &lt;a class="reference external" href="https://twitter.com/jduckles/status/603906245989289984"&gt;Oklahoma experience&lt;/a&gt;, too little sleep,
+and plenty of ideas for next time. Looking forward to many&amp;nbsp;more!&lt;/p&gt;
+&lt;p&gt;Thanks especially to our host &lt;a class="reference external" href="https://twitter.com/danabrunson"&gt;Dana Brunson&lt;/a&gt; for putting this&amp;nbsp;together!&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary><category term="teaching"></category><category term="swc"></category><category term="software"></category></entry><entry><title>Upcoming Software Carpentry workshop at Oklahoma State University</title><link href="http://smallerthings.org/2015-software-carpentry-osu.html" rel="alternate"></link><updated>2015-05-13T18:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-05-13:2015-software-carpentry-osu.html</id><summary type="html">&lt;p&gt;In two weeks from today I&amp;#8217;ll be in Stillwater, Oklahoma, teaching at my first
 &lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt; workshop.  The topics
 will include learning the basics of a &lt;a class="reference external" href="http://en.wikipedia.org/wiki/Unix_shell"&gt;Unix shell&lt;/a&gt;, programming in &lt;a class="reference external" href="www.python.org"&gt;python&lt;/a&gt;, version control and collaboration with &lt;a class="reference external" href="http://git-scm.com/"&gt;git&lt;/a&gt;, and data management with &lt;a class="reference external" href="http://en.wikipedia.org/wiki/SQL"&gt;&lt;span class="caps"&gt;SQL&lt;/span&gt;&lt;/a&gt;. Of these, perhaps &lt;span class="caps"&gt;SQL&lt;/span&gt; is my weakest area
 since I hardly ever have need of it, but it&amp;#8217;s a good excuse to brush up! Don&amp;#8217;t
