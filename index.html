@@ -22,89 +22,97 @@
                     <li><a href="http://smallerthings.org/category/education.html">education</a></li>
                     <li><a href="http://smallerthings.org/category/personal.html">personal</a></li>
                     <li><a href="http://smallerthings.org/category/science.html">science</a></li>
+                    <li><a href="http://smallerthings.org/category/software.html">software</a></li>
                 </ul>
                 </nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://smallerthings.org/2015-software-carpentry-osu-postmortem.html">Software Carpentry workshop at Oklahoma State University&nbsp;post-mortem</a></h1>
+                    <h1 class="entry-title"><a href="http://smallerthings.org/2015-introducing-mdsynthesis.html">ScipyConf 2015: Introducing&nbsp;MDSynthesis</a></h1>
 <footer class="post-info">
-        <span>Sat 30 May 2015</span>
-<span>| tags: <a href="http://smallerthings.org/tag/teaching.html">teaching</a><a href="http://smallerthings.org/tag/swc.html">swc</a><a href="http://smallerthings.org/tag/software.html">software</a></span>
-</footer><!-- /.post-info --><p>This week I taught my first <a class="reference external" href="http://software-carpentry.org/">Software Carpentry</a> workshop at Oklahoma State
-University. The workshop had been in such demand that we had a total of four
-instructors, including <a class="reference external" href="http://www.jduck.net/">Jonah Duckles</a>, <a class="reference external" href="http://k8hert.blogspot.com/">Kate Hertweck</a>, <a class="reference external" href="https://about.me/timtom">Thomas Guignard</a>,
-and myself. I arrived at the hotel close to 2am the first day of the workshop,
-and was running on nespresso during most of the morning&nbsp;session.</p>
-<p>Though originally Thomas and I were set to teach one room together, due to
-flight troubles Jonah took over the session on the Unix shell that kicked
-things off. I spent most of the time fixing issues with GitBash (usually
-fixed by reinstalling it) and helping people connect to the network (curse
-those certificates!), but these issues didn&#8217;t affect most of our learners. I
-was able to spend at least a little time watching Jonah teach, too, and
-I can say I learned a few things myself (e.g. that <tt class="docutils literal">tr</tt> is a&nbsp;thing!).</p>
-<p>I taught the session on <a class="reference external" href="http://www.python.org">Python</a>, which was split into two parts over the
-two days. This decision was made at the cost of omitting <span class="caps">SQL</span> for Day 2. It
-worked out well because even though I went too fast the first day (this was
-the dominant complaint from feedback), we still only barely touched on
-<a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation/06-func.html">functions</a> by the end of it. The second day&#8217;s session was entirely filled
-by the second half of material, which built on that of the&nbsp;first.</p>
-<p>This was my first time teaching the <span class="caps">SWC</span> Python lesson, and since it&#8217;s become an
-indispensable tool for doing my own research, I made use of the <a class="reference external" href="http://ipython.org/">iPython Notebook</a>.
-To help combat the problem of learners getting behind and needing to see content
-that I&#8217;ve since scrolled past, I did all my work out of a <a class="reference external" href="http://dropbox.com">Dropbox</a> folder
-and shared a link to my notebook file on the etherpad. Although a good idea, the
-biggest problem was that most learners couldn&#8217;t figure out how to view the file,
-since downloading and clicking on it usually results in it being opened in a
-text editor (they&#8217;re <span class="caps">JSON</span> files), leading to more confusion than answers.
-What&#8217;s more, it&#8217;s hard for many learners to find their working directory (where
-they&#8217;re working in a GitBash / terminal shell session) in the graphical file
-manager, so telling them to download the file and move it to the directory
-their notebook session is running from results mostly in blank&nbsp;stares.</p>
-<p>Fortunately one of our helpers added the notebook link to <a class="reference external" href="http://nbviewer.ipython.org/">NBViewer</a>, which
-renders the notebook directly in the browser so the students didn&#8217;t need to
-bother with the file at all. This required some fiddling to ensure that
-NBViewer actually picked up the updates whenever I saved my working notebook,
-but otherwise it worked <em>extremely well</em>. The students very much appreciated
-being able to click the nbviewer link in the etherpad and view my entire
-running notebook, hitting refresh to see it as it updates. I should note,
-however, that the time between me saving and the updated notebook showing up on
-refresh was at least a couple minutes; Thomas did some troubleshooting on this
-front to try and fix this, but I don&#8217;t think we managed much better than this.
-But I&#8217;ll take that over nothing!&nbsp;:D</p>
-<p>I&#8217;ve since removed the Dropbox share, but <a class="reference external" href="http://nbviewer.ipython.org/gist/dotsdl/c360b1927323667e3c21">the final notebook can be viewed
-here</a>.</p>
-<p>After the session on Day 1, I cleaned up the working notebook. I didn&#8217;t
-add anything that wasn&#8217;t discussed in the session, but instead recorded more
-of my commentary in the notebook itself since there wasn&#8217;t time to record
-it live. The learners appreciated this the next morning, especially with
-the NBViewer updates, since they could refer back to what we had done
-in case their notebooks were missing things we would need that&nbsp;day.</p>
-<p>I made a conscious effort on Day 2 to slooooow doooowwn, and I think I succeeded.
-We ended up making it to the goal, which is how to write Python scripts that
-behave like shell commands (showing that shell commands are <em>not</em> magic, and
-you, <span class="caps">YES</span> <span class="caps">YOU</span>!, can write your own!). The feedback was generally more positive
-on this day, and the discussions that followed indicate that people were happy
-with what they had spent the time&nbsp;learning.</p>
-<p>Thomas closed out the day with a lesson on Git. Despite it being his first
-time teaching that particular lesson (it didn&#8217;t show!), he went at a good pace
-and we were able to get through pair-wise collaboration on a publicly hosted
-git repository (using <a class="reference external" href="http://github.com">GitHub</a>). Among the teaching tools
-I plan to steal from him is his analogy of commits as group photos. That is,
-putting things in the staging area can be thought of as bringing people into
-the frame of the photo (and perhaps excluding others), while the commit is
-taking the photo itself and then clearing the&nbsp;frame.</p>
-<p>It was great to meet and learn from the learners, helpers, and my fellow
-instructors. I got the full <a class="reference external" href="https://twitter.com/jduckles/status/603906245989289984">Oklahoma experience</a>, too little sleep,
-and plenty of ideas for next time. Looking forward to many&nbsp;more!</p>
-<p>Thanks especially to our host <a class="reference external" href="https://twitter.com/danabrunson">Dana Brunson</a> for putting this&nbsp;together!</p>
+        <span>Mon 29 June 2015</span>
+<span>| tags: <a href="http://smallerthings.org/tag/molecular-dynamics.html">molecular dynamics</a><a href="http://smallerthings.org/tag/data.html">data</a><a href="http://smallerthings.org/tag/science.html">science</a></span>
+</footer><!-- /.post-info --><p>Although I&#8217;ve announced as much on <a class="reference external" href="https://twitter.com/dotsdl/status/598638811581526016">Twitter</a>, I&#8217;m excited to present a poster
+talk this year at <a class="reference external" href="http://www.scipy2015.scipy.org">ScipyConf</a>. It&#8217;ll be my first time attending, and I&#8217;m looking
+forward to meeting others that are passionate in advancing science through
+software, and in particular with&nbsp;Python.</p>
+<p>I&#8217;ll be presenting a software package I&#8217;ve been working on called
+<a class="reference external" href="https://github.com/Becksteinlab/MDSynthesis">MDSynthesis</a>, which has vastly improved the way I do science with <a class="reference external" href="https://en.wikipedia.org/wiki/Molecular_dynamics">molecular
+dynamics</a> (<span class="caps">MD</span>) simulations. MDSynthesis addresses an important bottleneck in
+<span class="caps">MD</span> research: going from raw simulation data (perhaps many terabytes, spread
+over tens to hundreds of simulations) to information that allows us to answer
+biophysical questions. I&#8217;ll&nbsp;explain&#8230;</p>
+<p>One of the obstacles to using modern data science tools like <a class="reference external" href="http://pandas.pydata.org/">pandas</a> to analyze
+<span class="caps">MD</span> data is the multitude of formats the <span class="caps">MD</span> ecosystem trades in. <a class="reference external" href="http://www.charmm.org/"><span class="caps">CHARMM</span></a> and
+<a class="reference external" href="http://www.ks.uiuc.edu/Research/namd/"><span class="caps">NAMD</span></a> use <span class="caps">DCD</span> files, <a class="reference external" href="http://ambermd.org/"><span class="caps">AMBER</span></a> uses a NetCDF-derived format, and <a class="reference external" href="http://www.gromacs.org/"><span class="caps">GROMACS</span></a> uses
+an <span class="caps">XDR</span> format; all told, there are at least 13 different formats used for
+storage of <span class="caps">MD</span> trajectory data, each with unique strengths and limitations.
+<a class="reference external" href="https://mdanalysis.org">MDAnalysis</a> is a python package that provides a common interface to many of
+these formats, turning trajectory data into numpy arrays that can be handled
+with the full power of the python&nbsp;universe.</p>
+<p>But the diversity in trajectory formats isn&#8217;t the only obstacle to distilling
+information from <span class="caps">MD</span> data; what&#8217;s also a problem is the variety of inputs
+available for building any particular simulation system. For example, when
+simulating a single protein, I have a lot of choices in: forcefields, starting
+conformation, protonation states, solvent, ions, temperature and pressure
+algorithm&#8230;the list goes on. The picture becomes more complicated when one
+wants to run different types of <span class="caps">MD</span>, as there is also a wide variety of
+enhanced-sampling methods available for&nbsp;use.</p>
+<p>And that&#8217;s still not all: trajectory data can take a while to churn through
+to extract measures we are interested in, depending on the measure and depending
+on the number/length of trajectories. It&#8217;s therefore useful to store intermediate
+data so we can interactively explore&nbsp;it.</p>
+<p>Managing this complexity is burdensome, and frankly, boring. I&#8217;d rather spend
+my limited time and energy doing science than managing my ever-growing
+colleciton of data. Furthermore, I want quick, specific, and easy access to the
+data I have so that I can begin answering&nbsp;questions.</p>
+<p>MDSynthesis has done this for me. The basic idea behind the package is to
+provide persistent objects that serve as data storage units, called
+<em>containers</em>.  One such container is the <a class="reference external" href="http://mdsynthesis.readthedocs.org/en/master/Sim.html">Sim</a> object. This can store any
+number of MDAnalysis Universe definitions (topologies + trajectories), along
+with atom selections for later use. Sims store their state directly to disk in
+a thin <span class="caps">HDF5</span> database (using <a class="reference external" href="http://www.pytables.org/">PyTables</a>), allowing recall of the same Sim
+instance later, or at the same time in another python session. Most
+importantly, Sims give an interface for easily storing pandas and numpy data
+structures in <span class="caps">HDF5</span> format with no fuss, with just as easy recall. Almost any
+other python data structure can also be stored just as easily; the container
+will pickle what it can&#8217;t serialize to <span class="caps">HDF5</span>.</p>
+<p>Beyond Sims, there are also <a class="reference external" href="http://mdsynthesis.readthedocs.org/en/master/Group.html">Groups</a>, which can store Sims and other Groups as
+members for easy recall of whole ensembles of containers and easy aggregation
+of their stored&nbsp;data.</p>
+<p>Those are the basic elements; more details can be found in the <a class="reference external" href="http://mdsynthesis.readthedocs.org/en/master/index.html">docs</a>. We just
+made an alpha release of the package last week which is already usable for
+daily work, but the project is still very young. What&#8217;s particularly exciting
+for me is that development of the package has already fed back into development
+of MDAnalysis, with even more performance and persistence functionality on the&nbsp;way.</p>
+<p>If you find this software useful, let me know! If it&#8217;s missing something
+that it sorely needs, feel free to submit an <a class="reference external" href="https://github.com/Becksteinlab/MDSynthesis/issues">issue</a> and we&#8217;ll get
+cracking on it. Pull requests are also&nbsp;welcome!</p>
 <p>&#8212;&nbsp;david</p>
-<p><a href="http://smallerthings.org/2015-software-carpentry-osu-postmortem.html#disqus_thread">comments</a></p>                </article>
+<p><a href="http://smallerthings.org/2015-introducing-mdsynthesis.html#disqus_thread">comments</a></p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://smallerthings.org/2015-software-carpentry-osu-postmortem.html" rel="bookmark"
+                           title="Permalink to Software Carpentry workshop at Oklahoma State University post-mortem">Software Carpentry workshop at Oklahoma State University&nbsp;post-mortem</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Sat 30 May 2015</span>
+<span>| tags: <a href="http://smallerthings.org/tag/teaching.html">teaching</a><a href="http://smallerthings.org/tag/swc.html">swc</a><a href="http://smallerthings.org/tag/software.html">software</a></span>
+</footer><!-- /.post-info -->                <p>This week I taught my first <a class="reference external" href="http://software-carpentry.org/">Software Carpentry</a> workshop at Oklahoma State
+University. The workshop had been in such demand that we had a total of four
+instructors, including <a class="reference external" href="http://www.jduck.net/">Jonah Duckles</a>, <a class="reference external" href="http://k8hert.blogspot.com/">Kate Hertweck</a>, <a class="reference external" href="https://about.me/timtom">Thomas Guignard</a>,
+and myself. I arrived at the hotel close to 2am the first day of the ...</p>
+                <a class="readmore" href="http://smallerthings.org/2015-software-carpentry-osu-postmortem.html">read more</a>
+<p><a href="http://smallerthings.org/2015-software-carpentry-osu-postmortem.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -121,25 +129,6 @@ and plenty of ideas for next time. Looking forward to many&nbsp;more!</p>
 will include learning the basics of a <a class="reference external" href="http://en.wikipedia.org/wiki/Unix_shell">Unix shell</a>, programming in <a class="reference external" href="www.python.org">python</a>, version control and collaboration with <a class="reference external" href="http://git-scm.com/">git</a>, and data management with <a class="reference external" href="http://en.wikipedia.org/wiki/SQL"><span class="caps">SQL</span></a>. Of these, perhaps <span class="caps">SQL</span> is my weakest ...</p>
                 <a class="readmore" href="http://smallerthings.org/2015-software-carpentry-osu.html">read more</a>
 <p><a href="http://smallerthings.org/2015-software-carpentry-osu.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://smallerthings.org/2015-software-carpentry-instructor.html" rel="bookmark"
-                           title="Permalink to I’m now a Software Carpentry Instructor!">I&#8217;m now a Software Carpentry&nbsp;Instructor!</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Wed 25 March 2015</span>
-<span>| tags: <a href="http://smallerthings.org/tag/teaching.html">teaching</a><a href="http://smallerthings.org/tag/swc.html">swc</a><a href="http://smallerthings.org/tag/software.html">software</a></span>
-</footer><!-- /.post-info -->                <p>Back in January I had the privilege to attend an in-person <a class="reference external" href="http://software-carpentry.org/">Software Carpentry</a> instructor training in Davis, <span class="caps">CA</span>, hosted by
-<a class="reference external" href="http://ivory.idyll.org/blog/">Titus Brown</a>. Software Carpentry is a
-non-profit volunteer organization that puts on &quot;bootcamps&quot; at institutions all
-over the world teaching best practices for building software to do science
-efficiently. The ...</p>
-                <a class="readmore" href="http://smallerthings.org/2015-software-carpentry-instructor.html">read more</a>
-<p><a href="http://smallerthings.org/2015-software-carpentry-instructor.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">

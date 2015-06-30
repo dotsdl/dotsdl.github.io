@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/software.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2015-06-29T23:00:00-07:00</updated><entry><title>ScipyConf 2015: Introducing MDSynthesis</title><link href="http://smallerthings.org/2015-introducing-mdsynthesis.html" rel="alternate"></link><updated>2015-06-29T23:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-06-29:2015-introducing-mdsynthesis.html</id><summary type="html">&lt;p&gt;Although I&amp;#8217;ve announced as much on &lt;a class="reference external" href="https://twitter.com/dotsdl/status/598638811581526016"&gt;Twitter&lt;/a&gt;, I&amp;#8217;m excited to present a poster
+talk this year at &lt;a class="reference external" href="http://www.scipy2015.scipy.org"&gt;ScipyConf&lt;/a&gt;. It&amp;#8217;ll be my first time attending, and I&amp;#8217;m looking
+forward to meeting others that are passionate in advancing science through
+software, and in particular with&amp;nbsp;Python.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ll be presenting a software package I&amp;#8217;ve been working on called
+&lt;a class="reference external" href="https://github.com/Becksteinlab/MDSynthesis"&gt;MDSynthesis&lt;/a&gt;, which has vastly improved the way I do science with &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Molecular_dynamics"&gt;molecular
+dynamics&lt;/a&gt; (&lt;span class="caps"&gt;MD&lt;/span&gt;) simulations. MDSynthesis addresses an important bottleneck in
+&lt;span class="caps"&gt;MD&lt;/span&gt; research: going from raw simulation data (perhaps many terabytes, spread
+over tens to hundreds of simulations) to information that allows us to answer
+biophysical questions. I&amp;#8217;ll&amp;nbsp;explain&amp;#8230;&lt;/p&gt;
+&lt;p&gt;One of the obstacles to using modern data science tools like &lt;a class="reference external" href="http://pandas.pydata.org/"&gt;pandas&lt;/a&gt; to analyze
+&lt;span class="caps"&gt;MD&lt;/span&gt; data is the multitude of formats the &lt;span class="caps"&gt;MD&lt;/span&gt; ecosystem trades in. &lt;a class="reference external" href="http://www.charmm.org/"&gt;&lt;span class="caps"&gt;CHARMM&lt;/span&gt;&lt;/a&gt; and
+&lt;a class="reference external" href="http://www.ks.uiuc.edu/Research/namd/"&gt;&lt;span class="caps"&gt;NAMD&lt;/span&gt;&lt;/a&gt; use &lt;span class="caps"&gt;DCD&lt;/span&gt; files, &lt;a class="reference external" href="http://ambermd.org/"&gt;&lt;span class="caps"&gt;AMBER&lt;/span&gt;&lt;/a&gt; uses a NetCDF-derived format, and &lt;a class="reference external" href="http://www.gromacs.org/"&gt;&lt;span class="caps"&gt;GROMACS&lt;/span&gt;&lt;/a&gt; uses
+an &lt;span class="caps"&gt;XDR&lt;/span&gt; format; all told, there are at least 13 different formats used for
+storage of &lt;span class="caps"&gt;MD&lt;/span&gt; trajectory data, each with unique strengths and limitations.
+&lt;a class="reference external" href="https://mdanalysis.org"&gt;MDAnalysis&lt;/a&gt; is a python package that provides a common interface to many of
+these formats, turning trajectory data into numpy arrays that can be handled
+with the full power of the python&amp;nbsp;universe.&lt;/p&gt;
+&lt;p&gt;But the diversity in trajectory formats isn&amp;#8217;t the only obstacle to distilling
+information from &lt;span class="caps"&gt;MD&lt;/span&gt; data; what&amp;#8217;s also a problem is the variety of inputs
+available for building any particular simulation system. For example, when
+simulating a single protein, I have a lot of choices in: forcefields, starting
+conformation, protonation states, solvent, ions, temperature and pressure
+algorithm&amp;#8230;the list goes on. The picture becomes more complicated when one
+wants to run different types of &lt;span class="caps"&gt;MD&lt;/span&gt;, as there is also a wide variety of
+enhanced-sampling methods available for&amp;nbsp;use.&lt;/p&gt;
+&lt;p&gt;And that&amp;#8217;s still not all: trajectory data can take a while to churn through
+to extract measures we are interested in, depending on the measure and depending
+on the number/length of trajectories. It&amp;#8217;s therefore useful to store intermediate
+data so we can interactively explore&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;Managing this complexity is burdensome, and frankly, boring. I&amp;#8217;d rather spend
+my limited time and energy doing science than managing my ever-growing
+colleciton of data. Furthermore, I want quick, specific, and easy access to the
+data I have so that I can begin answering&amp;nbsp;questions.&lt;/p&gt;
+&lt;p&gt;MDSynthesis has done this for me. The basic idea behind the package is to
+provide persistent objects that serve as data storage units, called
+&lt;em&gt;containers&lt;/em&gt;.  One such container is the &lt;a class="reference external" href="http://mdsynthesis.readthedocs.org/en/master/Sim.html"&gt;Sim&lt;/a&gt; object. This can store any
+number of MDAnalysis Universe definitions (topologies + trajectories), along
+with atom selections for later use. Sims store their state directly to disk in
+a thin &lt;span class="caps"&gt;HDF5&lt;/span&gt; database (using &lt;a class="reference external" href="http://www.pytables.org/"&gt;PyTables&lt;/a&gt;), allowing recall of the same Sim
+instance later, or at the same time in another python session. Most
+importantly, Sims give an interface for easily storing pandas and numpy data
+structures in &lt;span class="caps"&gt;HDF5&lt;/span&gt; format with no fuss, with just as easy recall. Almost any
+other python data structure can also be stored just as easily; the container
+will pickle what it can&amp;#8217;t serialize to &lt;span class="caps"&gt;HDF5&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Beyond Sims, there are also &lt;a class="reference external" href="http://mdsynthesis.readthedocs.org/en/master/Group.html"&gt;Groups&lt;/a&gt;, which can store Sims and other Groups as
+members for easy recall of whole ensembles of containers and easy aggregation
+of their stored&amp;nbsp;data.&lt;/p&gt;
+&lt;p&gt;Those are the basic elements; more details can be found in the &lt;a class="reference external" href="http://mdsynthesis.readthedocs.org/en/master/index.html"&gt;docs&lt;/a&gt;. We just
+made an alpha release of the package last week which is already usable for
+daily work, but the project is still very young. What&amp;#8217;s particularly exciting
+for me is that development of the package has already fed back into development
+of MDAnalysis, with even more performance and persistence functionality on the&amp;nbsp;way.&lt;/p&gt;
+&lt;p&gt;If you find this software useful, let me know! If it&amp;#8217;s missing something
+that it sorely needs, feel free to submit an &lt;a class="reference external" href="https://github.com/Becksteinlab/MDSynthesis/issues"&gt;issue&lt;/a&gt; and we&amp;#8217;ll get
+cracking on it. Pull requests are also&amp;nbsp;welcome!&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary><category term="molecular dynamics"></category><category term="data"></category><category term="science"></category></entry></feed>
