@@ -23,7 +23,7 @@ available for building any particular simulation system. For example, when
 simulating a single protein, I have a lot of choices in: forcefields, starting
 conformation, protonation states, solvent, ions, temperature and pressure
 algorithm&amp;#8230;the list goes on. The picture becomes more complicated when one
-wants to run different types of &lt;span class="caps"&gt;MD&lt;/span&gt;, as there is also a wide variety of
+wants to run different types of &lt;span class="caps"&gt;MD&lt;/span&gt;, as there are also a wide variety of
 enhanced-sampling methods available for&amp;nbsp;use.&lt;/p&gt;
 &lt;p&gt;And that&amp;#8217;s still not all: trajectory data can take a while to churn through
 to extract measures we are interested in, depending on the measure and depending
