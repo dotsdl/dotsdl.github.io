@@ -14,7 +14,7 @@ biophysical questions. I&amp;#8217;ll&amp;nbsp;explain&amp;#8230;&lt;/p&gt;
 &lt;a class="reference external" href="http://www.ks.uiuc.edu/Research/namd/"&gt;&lt;span class="caps"&gt;NAMD&lt;/span&gt;&lt;/a&gt; use &lt;span class="caps"&gt;DCD&lt;/span&gt; files, &lt;a class="reference external" href="http://ambermd.org/"&gt;&lt;span class="caps"&gt;AMBER&lt;/span&gt;&lt;/a&gt; uses a NetCDF-derived format, and &lt;a class="reference external" href="http://www.gromacs.org/"&gt;&lt;span class="caps"&gt;GROMACS&lt;/span&gt;&lt;/a&gt; uses
 an &lt;span class="caps"&gt;XDR&lt;/span&gt; format; all told, there are at least 13 different formats used for
 storage of &lt;span class="caps"&gt;MD&lt;/span&gt; trajectory data, each with unique strengths and limitations.
-&lt;a class="reference external" href="https://mdanalysis.org"&gt;MDAnalysis&lt;/a&gt; is a python package that provides a common interface to many of
+&lt;a class="reference external" href="http://mdanalysis.org"&gt;MDAnalysis&lt;/a&gt; is a python package that provides a common interface to many of
 these formats, turning trajectory data into numpy arrays that can be handled
 with the full power of the python&amp;nbsp;universe.&lt;/p&gt;
 &lt;p&gt;But the diversity in trajectory formats isn&amp;#8217;t the only obstacle to distilling
@@ -31,7 +31,7 @@ on the number/length of trajectories. It&amp;#8217;s therefore useful to store i
 data so we can interactively explore&amp;nbsp;it.&lt;/p&gt;
 &lt;p&gt;Managing this complexity is burdensome, and frankly, boring. I&amp;#8217;d rather spend
 my limited time and energy doing science than managing my ever-growing
-colleciton of data. Furthermore, I want quick, specific, and easy access to the
+collection of data. Furthermore, I want quick, specific, and easy access to the
 data I have so that I can begin answering&amp;nbsp;questions.&lt;/p&gt;
 &lt;p&gt;MDSynthesis has done this for me. The basic idea behind the package is to
 provide persistent objects that serve as data storage units, called

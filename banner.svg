@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="412"
+   height="64"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="smallerthings.svg"
+   inkscape:export-filename="/home/alter/Desktop/smallerthingscent2.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="81.412287"
+     inkscape:cy="-23.129234"
+     inkscape:document-units="px"
+     inkscape:current-layer="g2993"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1280"
+     inkscape:window-height="966"
+     inkscape:window-x="43"
+     inkscape:window-y="29"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-79.43086,-72.475287)">
+    <g
+       id="g2993"
+       transform="translate(4.4676246,-117.15952)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text2985"
+         y="226.6479"
+         x="77.14286"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Helvetica Neue LT Pro;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:48px;font-weight:bold;-inkscape-font-specification:Helvetica Neue LT Pro Bold;fill:#333333;fill-opacity:1"
+           y="226.6479"
+           x="77.14286"
+           id="tspan2987"
+           sodipodi:role="line">the smaller things</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text2989"
+         y="248.79529"
+         x="153.57199"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;font-family:Helvetica Neue LT Pro;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:20px;font-weight:normal;-inkscape-font-specification:Helvetica Neue LT Pro;fill:#333333;fill-opacity:1"
+           y="248.79529"
+           x="153.57199"
+           id="tspan2991"
+           sodipodi:role="line">a blog about states and transitions</tspan></text>
+    </g>
+  </g>
+</svg>

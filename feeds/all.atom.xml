@@ -14,7 +14,7 @@ biophysical questions. I&amp;#8217;ll&amp;nbsp;explain&amp;#8230;&lt;/p&gt;
 &lt;a class="reference external" href="http://www.ks.uiuc.edu/Research/namd/"&gt;&lt;span class="caps"&gt;NAMD&lt;/span&gt;&lt;/a&gt; use &lt;span class="caps"&gt;DCD&lt;/span&gt; files, &lt;a class="reference external" href="http://ambermd.org/"&gt;&lt;span class="caps"&gt;AMBER&lt;/span&gt;&lt;/a&gt; uses a NetCDF-derived format, and &lt;a class="reference external" href="http://www.gromacs.org/"&gt;&lt;span class="caps"&gt;GROMACS&lt;/span&gt;&lt;/a&gt; uses
 an &lt;span class="caps"&gt;XDR&lt;/span&gt; format; all told, there are at least 13 different formats used for
 storage of &lt;span class="caps"&gt;MD&lt;/span&gt; trajectory data, each with unique strengths and limitations.
-&lt;a class="reference external" href="https://mdanalysis.org"&gt;MDAnalysis&lt;/a&gt; is a python package that provides a common interface to many of
+&lt;a class="reference external" href="http://mdanalysis.org"&gt;MDAnalysis&lt;/a&gt; is a python package that provides a common interface to many of
 these formats, turning trajectory data into numpy arrays that can be handled
 with the full power of the python&amp;nbsp;universe.&lt;/p&gt;
 &lt;p&gt;But the diversity in trajectory formats isn&amp;#8217;t the only obstacle to distilling
@@ -31,7 +31,7 @@ on the number/length of trajectories. It&amp;#8217;s therefore useful to store i
 data so we can interactively explore&amp;nbsp;it.&lt;/p&gt;
 &lt;p&gt;Managing this complexity is burdensome, and frankly, boring. I&amp;#8217;d rather spend
 my limited time and energy doing science than managing my ever-growing
-colleciton of data. Furthermore, I want quick, specific, and easy access to the
+collection of data. Furthermore, I want quick, specific, and easy access to the
 data I have so that I can begin answering&amp;nbsp;questions.&lt;/p&gt;
 &lt;p&gt;MDSynthesis has done this for me. The basic idea behind the package is to
 provide persistent objects that serve as data storage units, called
@@ -138,7 +138,7 @@ space in the coming&amp;nbsp;weeks!&lt;/p&gt;
 &lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
 </summary><category term="teaching"></category><category term="swc"></category><category term="software"></category></entry><entry><title>I’m now a Software Carpentry Instructor!</title><link href="http://smallerthings.org/2015-software-carpentry-instructor.html" rel="alternate"></link><updated>2015-03-25T10:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-03-25:2015-software-carpentry-instructor.html</id><summary type="html">&lt;p&gt;Back in January I had the privilege to attend an in-person &lt;a class="reference external" href="http://software-carpentry.org/"&gt;Software Carpentry&lt;/a&gt; instructor training in Davis, &lt;span class="caps"&gt;CA&lt;/span&gt;, hosted by
 &lt;a class="reference external" href="http://ivory.idyll.org/blog/"&gt;Titus Brown&lt;/a&gt;. Software Carpentry is a
-non-profit volunteer organization that puts on &amp;quot;bootcamps&amp;quot; at institutions all
+non-profit volunteer organization that puts on &amp;#8220;bootcamps&amp;#8221; at institutions all
 over the world teaching best practices for building software to do science
 efficiently. The three-day training helped to improve my own awareness of how
 people learn the technical skills we teach, and I learned plenty about my own
@@ -221,7 +221,7 @@ little while now, and this blog is part of an effort to emulate his
 (&lt;a class="reference external" href="http://ivory.idyll.org/blog/blog-practicing-open-science.html"&gt;relatively conservative&lt;/a&gt;)
 brand of open science. However, if it wasn&amp;#8217;t obvious from my lack of new content over
 the past few months, I&amp;#8217;ve been in a bit of a rut. What&amp;nbsp;gives?&lt;/p&gt;
-&lt;p&gt;Well, for one thing I don&amp;#8217;t &amp;quot;own&amp;quot; the research I produce. Or, at the very
+&lt;p&gt;Well, for one thing I don&amp;#8217;t &amp;#8220;own&amp;#8221; the research I produce. Or, at the very
 least, I don&amp;#8217;t &lt;em&gt;completely&lt;/em&gt; own it. There are my collaborators to think about,
 not to mention my &lt;span class="caps"&gt;PI&lt;/span&gt;, whose ultimate permission I must obtain to openly
 discuss the things we are hammering on. And in a competitive field, there is
@@ -262,7 +262,7 @@ no, it&amp;#8217;s just &lt;a class="reference external" href="http://www.ncbi.n
 has links to the full text!&amp;nbsp;Click.&lt;/p&gt;
 &lt;p&gt;Quickly you scan for a &lt;span class="caps"&gt;PDF&lt;/span&gt; download link. But there&amp;#8217;s a number next to
 it. &lt;strong&gt;For the low, low price of $28.00, this article could be yours!&lt;/strong&gt;
-Or you could &amp;quot;rent&amp;quot; it for $4.00, whatever that&amp;nbsp;means.&lt;/p&gt;
+Or you could &amp;#8220;rent&amp;#8221; it for $4.00, whatever that&amp;nbsp;means.&lt;/p&gt;
 &lt;p&gt;I have roughly 400 articles in my Zotero library, and it&amp;#8217;s growing fast.
 Luckily I&amp;#8217;m privileged to have access to
 &lt;a class="reference external" href="https://lib.asu.edu/"&gt;&lt;span class="caps"&gt;ASU&lt;/span&gt;&lt;/a&gt;&amp;#8216;s library subscriptions for most (though
@@ -354,8 +354,8 @@ it for others because I&amp;#8217;m terminally optimistic, and I needed the&amp;
 &lt;p&gt;One&amp;nbsp;recurring mistake made by creationists when trying to discredit
 science is this: it is assumed that science must observe &lt;strong&gt;every&lt;/strong&gt;
 phenomenon a theory posits to take place in order for that theory to be
-considered valid. When a creationist says repeatedly that &amp;quot;there is no
-evidence for &lt;span class="caps"&gt;THEORY&lt;/span&gt; X&amp;quot;, he is oftentimes operating on his standard that
+considered valid. When a creationist says repeatedly that &amp;#8220;there is no
+evidence for &lt;span class="caps"&gt;THEORY&lt;/span&gt; X&amp;#8221;, he is oftentimes operating on his standard that
 &lt;strong&gt;every&lt;/strong&gt; prediction of that theory must be tested. This is unreasonable
 for science to progress; worse, it&amp;#8217;s shown itself to be &lt;strong&gt;unnecessary&lt;/strong&gt;.
 The value of theory is that it is better than a library of observations;
@@ -363,12 +363,12 @@ it gives greater insight into what&amp;#8217;s actually&amp;nbsp;happening.&lt;/
 &lt;p&gt;To use an analogy: many of my students in an introductory physics course
 spent&amp;nbsp;the beginning of the semester doing physics problems with
 arithmetic. They were literally throwing numbers around in ways that
-&amp;quot;made sense&amp;quot; to them until they arrived at an (often wrong) answer.&amp;nbsp;To
+&amp;#8220;made sense&amp;#8221; to them until they arrived at an (often wrong) answer.&amp;nbsp;To
 break them of this, I began asking questions that required some higher
-level thought. Instead of &amp;quot;how high on the wall does the projectile
-strike&amp;quot; given some set of initial conditions, I asked &amp;quot;what is the
+level thought. Instead of &amp;#8220;how high on the wall does the projectile
+strike&amp;#8221; given some set of initial conditions, I asked &amp;#8220;what is the
 minimum speed with which the projectile must be fired in order to go
-over the wall.&amp;quot; Those that tried arithmetic quickly realized they&amp;#8217;d have
+over the wall.&amp;#8221; Those that tried arithmetic quickly realized they&amp;#8217;d have
 to trial-and-error it to get the answer, which would be&amp;nbsp;silly.&lt;/p&gt;
 &lt;p&gt;The ones that solved the problem instead used the theory they had
 learned in class (2D kinematics, a purely descriptive part of classical

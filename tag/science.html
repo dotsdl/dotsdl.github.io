@@ -48,7 +48,7 @@ biophysical questions. I&#8217;ll&nbsp;explain&#8230;</p>
 <a class="reference external" href="http://www.ks.uiuc.edu/Research/namd/"><span class="caps">NAMD</span></a> use <span class="caps">DCD</span> files, <a class="reference external" href="http://ambermd.org/"><span class="caps">AMBER</span></a> uses a NetCDF-derived format, and <a class="reference external" href="http://www.gromacs.org/"><span class="caps">GROMACS</span></a> uses
 an <span class="caps">XDR</span> format; all told, there are at least 13 different formats used for
 storage of <span class="caps">MD</span> trajectory data, each with unique strengths and limitations.
-<a class="reference external" href="https://mdanalysis.org">MDAnalysis</a> is a python package that provides a common interface to many of
+<a class="reference external" href="http://mdanalysis.org">MDAnalysis</a> is a python package that provides a common interface to many of
 these formats, turning trajectory data into numpy arrays that can be handled
 with the full power of the python&nbsp;universe.</p>
 <p>But the diversity in trajectory formats isn&#8217;t the only obstacle to distilling
@@ -65,7 +65,7 @@ on the number/length of trajectories. It&#8217;s therefore useful to store inter
 data so we can interactively explore&nbsp;it.</p>
 <p>Managing this complexity is burdensome, and frankly, boring. I&#8217;d rather spend
 my limited time and energy doing science than managing my ever-growing
-colleciton of data. Furthermore, I want quick, specific, and easy access to the
+collection of data. Furthermore, I want quick, specific, and easy access to the
 data I have so that I can begin answering&nbsp;questions.</p>
 <p>MDSynthesis has done this for me. The basic idea behind the package is to
 provide persistent objects that serve as data storage units, called
