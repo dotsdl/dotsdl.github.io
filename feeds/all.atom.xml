@@ -1,5 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/all.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2015-06-29T23:00:00-07:00</updated><entry><title>SciPy 2015: Introducing MDSynthesis</title><link href="http://smallerthings.org/2015-introducing-mdsynthesis.html" rel="alternate"></link><updated>2015-06-29T23:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-06-29:2015-introducing-mdsynthesis.html</id><summary type="html">&lt;p&gt;Although I&amp;#8217;ve announced as much on &lt;a class="reference external" href="https://twitter.com/dotsdl/status/598638811581526016"&gt;Twitter&lt;/a&gt;, I&amp;#8217;m excited to present a poster
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/all.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2015-08-11T13:00:00-07:00</updated><entry><title>SciPy 2015: come for the conference, stay for the people</title><link href="http://smallerthings.org/2015-scipy.html" rel="alternate"></link><updated>2015-08-11T13:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-08-11:2015-scipy.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s now been several weeks since I returned from my first &lt;a class="reference external" href="http://scipy2015.scipy.org/"&gt;SciPy&lt;/a&gt;, and I realized I
+had yet to actually write about it on my own blog. Well, late is better than
+never. If nothing else, the time delay has allowed the dust to settle for a
+more coherent post.&amp;nbsp;:)&lt;/p&gt;
+&lt;p&gt;Short version: &lt;strong&gt;SciPy was perhaps the most fun I&amp;#8217;ve had at a&amp;nbsp;conference.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Why? Several reasons. First, the audience is very diverse: most are working in
+science but many others are working in tech and software development. This is
+in contrast to many of the conferences I&amp;#8217;ve attended which are primarily
+scientists working in my field, very few of which spend much of their time
+developing and maintaining&amp;nbsp;software.&lt;/p&gt;
+&lt;p&gt;Second, the conference itself is different than most in terms of its basic
+structure, composed&amp;nbsp;of:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;2 days of&amp;nbsp;tutorials&lt;/li&gt;
+&lt;li&gt;3 days of main&amp;nbsp;conference&lt;/li&gt;
+&lt;li&gt;2 days of&amp;nbsp;sprints&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since this was my first time attending, I decided to get the full SciPy
+experience and attend the whole week. I&amp;#8217;m glad I&amp;nbsp;did.&lt;/p&gt;
+&lt;p&gt;The two tutorials I most enjoyed were those on &lt;a class="reference external" href="https://github.com/amueller/scipy_2015_sklearn_tutorial"&gt;machine learning with
+scikit-learn&lt;/a&gt; and &lt;a class="reference external" href="https://github.com/chdoig/scipy2015-blaze-bokeh"&gt;using bokeh to create interactive plots&lt;/a&gt;. Although I had
+played briefly with both packages before, these sessions offered a more
+thorough view to what can be done with them, and most importantly, &lt;em&gt;how&lt;/em&gt;.
+In particular, for &lt;a class="reference external" href="http://scikit-learn.org/"&gt;scikit-learn&lt;/a&gt; I was struck at how well thought-out
+its built-in parameter sweeps and cross-validation machinery was, and it&amp;#8217;s given me
+ideas for how to build similar robustness machinery for other packages, e.g.
+&lt;a class="reference external" href="https://github.com/projectmesa/mesa"&gt;mesa&lt;/a&gt;. I&amp;#8217;m not entirely sure yet where I might make use of &lt;a class="reference external" href="http://bokeh.pydata.org/"&gt;bokeh&lt;/a&gt;, since
+ultimately plots I produce need to be exported to a printable form. However,
+for publishing data visualizations to the web it&amp;#8217;s a great&amp;nbsp;option.&lt;/p&gt;
+&lt;p&gt;The conference itself sported three simultaneous tracks of talks, a poster
+session, and daily lightning talks. A few of my&amp;nbsp;favorites:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/1kkFZ4P-XHg"&gt;Dask: Out-of-Core Numpy and Pandas through Task Scheduling&lt;/a&gt;: a talk on
+&lt;a class="reference external" href="http://dask.pydata.org/"&gt;dask&lt;/a&gt;, which provides data structures that can do complex out-of-core
+operations with an &lt;span class="caps"&gt;API&lt;/span&gt; similar to numpy and&amp;nbsp;pandas.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/nddj5OA8LJo"&gt;&lt;span class="caps"&gt;HDF5&lt;/span&gt; is Eating the World&lt;/a&gt;: a talk by Andrew Collette (author of &lt;a class="reference external" href="http://www.h5py.org/"&gt;h5py&lt;/a&gt;) on
+ways to wield &lt;span class="caps"&gt;HDF5&lt;/span&gt; effectively, as well as exciting new developments in &lt;span class="caps"&gt;HDF5&lt;/span&gt;&amp;nbsp;itself.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/TBBtOeY2Q78"&gt;Deep Learning: Tips from the Road&lt;/a&gt;: a talk by Kyle Kastner on deep
+learning, its uses, and its limitations. This is a great, short intro to
+neural&amp;nbsp;networks.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/lcySLoprPMc"&gt;Agent Based Modeling in Python with Mesa&lt;/a&gt;: introduction of &lt;a class="reference external" href="https://github.com/projectmesa/mesa"&gt;mesa&lt;/a&gt;, a new
+package that fills a hole in the python ecosystem: a package for building
+agent-based&amp;nbsp;simulations.&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/_3YoaeoiIF"&gt;VisPy: Harnessing the &lt;span class="caps"&gt;GPU&lt;/span&gt; for Fast, High Level Visualization&lt;/a&gt;: a great talk
+by Luke Campagnola on the capabilities of &lt;a class="reference external" href="http://vispy.org/"&gt;VisPy&lt;/a&gt; to generate complex visualizations
+in real time using the &lt;span class="caps"&gt;GPU&lt;/span&gt; and&amp;nbsp;OpenGL.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are many more where that came from,&amp;nbsp;including:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/ZSM-tmbBZ5E"&gt;Time Series Analysis for Network&amp;nbsp;Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/TGGGDpb04Yc"&gt;Statistical Thinking for Data&amp;nbsp;Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/X0pAhJgySxk"&gt;xray: &lt;span class="caps"&gt;ND&lt;/span&gt; Labeled Arrays and&amp;nbsp;Datasets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/JSFZ3i3WcjQ"&gt;RESTful &lt;span class="caps"&gt;HDF&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/OuhtpxGuboY"&gt;Teaching with IPython/Jupyter Notebooks and&amp;nbsp;JupyterHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/eYIPEDnp5C4"&gt;Accelerating Python with the Numba &lt;span class="caps"&gt;JIT&lt;/span&gt;&amp;nbsp;Compiler&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each day of the main conference featured a keynote, all three of which are
+worth&amp;nbsp;watching.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/MNosMXFGtBE"&gt;Data Science at the New York Times by Chris&amp;nbsp;Wiggins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/kHdkFyGCxiY"&gt;My Data Journey with Python by Wes&amp;nbsp;McKinney&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/5GlNDD7qbP4"&gt;State of the Tools by Jake&amp;nbsp;VanderPlaas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since it&amp;#8217;s impossible to attend everything, I&amp;#8217;m extremely thankful all of these talks
+can be viewed directly on YouTube. Check out the &lt;a class="reference external" href="https://www.youtube.com/playlist?list=PLYx7XA2nY5Gcpabmu61kKcToLz0FapmHu"&gt;full playlist&lt;/a&gt; for plenty&amp;nbsp;more.&lt;/p&gt;
+&lt;p&gt;The last two days featured sprints. For the uninitiated: these are long blocks of time
+during which you can work on issues in a codebase collaboratively and in-person
+with others. At SciPy, however, mostly these are just a great way to get
+involved in new projects and work alongside some of the core developers. I&amp;#8217;m
+particularly interested in machine learning applications to simulation work, so
+I split my time between working on &lt;a class="reference external" href="http://scikit-learn.org/"&gt;scikit-learn&lt;/a&gt; and &lt;a class="reference external" href="https://github.com/projectmesa/mesa"&gt;mesa&lt;/a&gt;. Although I only
+ended up submitting a couple PRs to &lt;a class="reference external" href="http://scikit-learn.org/"&gt;scikit-learn&lt;/a&gt; over the course of the
+weekend, I got a good sense of the structure of the packages and had memorable
+discussions with the developers. The only problem now is figuring out where
+I&amp;#8217;m going to devote my (rather limited) time outside of graduate school to open
+source projects that aren&amp;#8217;t &lt;a class="reference external" href="http://mdanalysis.org"&gt;mdanalysis&lt;/a&gt; related. The upside is there are
+really no bad&amp;nbsp;choices.&lt;/p&gt;
+&lt;p&gt;Besides all the new tools and technical developments SciPy made me aware of, what I
+value most from the conference are the people that I met and the connections I
+made with them. The scientific Python community includes some of the most
+intelligent and passionate people I&amp;#8217;ve ever met. It was a pleasure to spend a
+week with some of&amp;nbsp;them.&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary><category term="data"></category><category term="science"></category><category term="python"></category><category term="scipy"></category></entry><entry><title>SciPy 2015: Introducing MDSynthesis</title><link href="http://smallerthings.org/2015-introducing-mdsynthesis.html" rel="alternate"></link><updated>2015-06-29T23:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2015-06-29:2015-introducing-mdsynthesis.html</id><summary type="html">&lt;p&gt;Although I&amp;#8217;ve announced as much on &lt;a class="reference external" href="https://twitter.com/dotsdl/status/598638811581526016"&gt;Twitter&lt;/a&gt;, I&amp;#8217;m excited to present a poster
 talk this year at &lt;a class="reference external" href="http://www.scipy2015.scipy.org"&gt;SciPy&lt;/a&gt;. It&amp;#8217;ll be my first time attending, and I&amp;#8217;m looking
 forward to meeting others that are passionate in advancing science through
 software, and in particular with&amp;nbsp;Python.&lt;/p&gt;

@@ -29,72 +29,117 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://smallerthings.org/2015-introducing-mdsynthesis.html">SciPy 2015: Introducing&nbsp;MDSynthesis</a></h1>
+                    <h1 class="entry-title"><a href="http://smallerthings.org/2015-scipy.html">SciPy 2015: come for the conference, stay for the&nbsp;people</a></h1>
 <footer class="post-info">
-        <span>Mon 29 June 2015</span>
-<span>| tags: <a href="http://smallerthings.org/tag/molecular-dynamics.html">molecular dynamics</a><a href="http://smallerthings.org/tag/data.html">data</a><a href="http://smallerthings.org/tag/science.html">science</a></span>
-</footer><!-- /.post-info --><p>Although I&#8217;ve announced as much on <a class="reference external" href="https://twitter.com/dotsdl/status/598638811581526016">Twitter</a>, I&#8217;m excited to present a poster
-talk this year at <a class="reference external" href="http://www.scipy2015.scipy.org">SciPy</a>. It&#8217;ll be my first time attending, and I&#8217;m looking
-forward to meeting others that are passionate in advancing science through
-software, and in particular with&nbsp;Python.</p>
-<p>I&#8217;ll be presenting a software package I&#8217;ve been working on called
-<a class="reference external" href="https://github.com/Becksteinlab/MDSynthesis">MDSynthesis</a>, which has vastly improved the way I do science with <a class="reference external" href="https://en.wikipedia.org/wiki/Molecular_dynamics">molecular
-dynamics</a> (<span class="caps">MD</span>) simulations. MDSynthesis addresses an important bottleneck in
-<span class="caps">MD</span> research: going from raw simulation data (perhaps many terabytes, spread
-over tens to hundreds of simulations) to information that allows us to answer
-biophysical questions. I&#8217;ll&nbsp;explain&#8230;</p>
-<p>One of the obstacles to using modern data science tools like <a class="reference external" href="http://pandas.pydata.org/">pandas</a> to analyze
-<span class="caps">MD</span> data is the multitude of formats the <span class="caps">MD</span> ecosystem trades in. <a class="reference external" href="http://www.charmm.org/"><span class="caps">CHARMM</span></a> and
-<a class="reference external" href="http://www.ks.uiuc.edu/Research/namd/"><span class="caps">NAMD</span></a> use <span class="caps">DCD</span> files, <a class="reference external" href="http://ambermd.org/"><span class="caps">AMBER</span></a> uses a NetCDF-derived format, and <a class="reference external" href="http://www.gromacs.org/"><span class="caps">GROMACS</span></a> uses
-an <span class="caps">XDR</span> format; all told, there are at least 13 different formats used for
-storage of <span class="caps">MD</span> trajectory data, each with unique strengths and limitations.
-<a class="reference external" href="http://mdanalysis.org">MDAnalysis</a> is a python package that provides a common interface to many of
-these formats, turning trajectory data into numpy arrays that can be handled
-with the full power of the python&nbsp;universe.</p>
-<p>But the diversity in trajectory formats isn&#8217;t the only obstacle to distilling
-information from <span class="caps">MD</span> data; what&#8217;s also a problem is the variety of inputs
-available for building any particular simulation system. For example, when
-simulating a single protein, I have a lot of choices in: forcefields, starting
-conformation, protonation states, solvent, ions, temperature and pressure
-algorithm&#8230;the list goes on. The picture becomes more complicated when one
-wants to run different types of <span class="caps">MD</span>, as there are also a wide variety of
-enhanced-sampling methods available for&nbsp;use.</p>
-<p>And that&#8217;s still not all: trajectory data can take a while to churn through
-to extract measures we are interested in, depending on the measure and depending
-on the number/length of trajectories. It&#8217;s therefore useful to store intermediate
-data so we can interactively explore&nbsp;it.</p>
-<p>Managing this complexity is burdensome, and frankly, boring. I&#8217;d rather spend
-my limited time and energy doing science than managing my ever-growing
-collection of data. Furthermore, I want quick, specific, and easy access to the
-data I have so that I can begin answering&nbsp;questions.</p>
-<p>MDSynthesis has done this for me. The basic idea behind the package is to
-provide persistent objects that serve as data storage units, called
-<em>containers</em>.  One such container is the <a class="reference external" href="http://mdsynthesis.readthedocs.org/en/master/Sim.html">Sim</a> object. This can store any
-number of MDAnalysis Universe definitions (topologies + trajectories), along
-with atom selections for later use. Sims store their state directly to disk in
-a thin <span class="caps">HDF5</span> database (using <a class="reference external" href="http://www.pytables.org/">PyTables</a>), allowing recall of the same Sim
-instance later, or at the same time in another python session. Most
-importantly, Sims give an interface for easily storing pandas and numpy data
-structures in <span class="caps">HDF5</span> format with no fuss, with just as easy recall. Almost any
-other python data structure can also be stored just as easily; the container
-will pickle what it can&#8217;t serialize to <span class="caps">HDF5</span>.</p>
-<p>Beyond Sims, there are also <a class="reference external" href="http://mdsynthesis.readthedocs.org/en/master/Group.html">Groups</a>, which can store Sims and other Groups as
-members for easy recall of whole ensembles of containers and easy aggregation
-of their stored&nbsp;data.</p>
-<p>Those are the basic elements; more details can be found in the <a class="reference external" href="http://mdsynthesis.readthedocs.org/en/master/index.html">docs</a>. We just
-made an alpha release of the package last week which is already usable for
-daily work, but the project is still very young. What&#8217;s particularly exciting
-for me is that development of the package has already fed back into development
-of MDAnalysis, with even more performance and persistence functionality on the&nbsp;way.</p>
-<p>If you find this software useful, let me know! If it&#8217;s missing something
-that it sorely needs, feel free to submit an <a class="reference external" href="https://github.com/Becksteinlab/MDSynthesis/issues">issue</a> and we&#8217;ll get
-cracking on it. Pull requests are also&nbsp;welcome!</p>
+        <span>Tue 11 August 2015</span>
+<span>| tags: <a href="http://smallerthings.org/tag/data.html">data</a><a href="http://smallerthings.org/tag/science.html">science</a><a href="http://smallerthings.org/tag/python.html">python</a><a href="http://smallerthings.org/tag/scipy.html">scipy</a></span>
+</footer><!-- /.post-info --><p>It&#8217;s now been several weeks since I returned from my first <a class="reference external" href="http://scipy2015.scipy.org/">SciPy</a>, and I realized I
+had yet to actually write about it on my own blog. Well, late is better than
+never. If nothing else, the time delay has allowed the dust to settle for a
+more coherent post.&nbsp;:)</p>
+<p>Short version: <strong>SciPy was perhaps the most fun I&#8217;ve had at a&nbsp;conference.</strong></p>
+<p>Why? Several reasons. First, the audience is very diverse: most are working in
+science but many others are working in tech and software development. This is
+in contrast to many of the conferences I&#8217;ve attended which are primarily
+scientists working in my field, very few of which spend much of their time
+developing and maintaining&nbsp;software.</p>
+<p>Second, the conference itself is different than most in terms of its basic
+structure, composed&nbsp;of:</p>
+<ul class="simple">
+<li>2 days of&nbsp;tutorials</li>
+<li>3 days of main&nbsp;conference</li>
+<li>2 days of&nbsp;sprints</li>
+</ul>
+<p>Since this was my first time attending, I decided to get the full SciPy
+experience and attend the whole week. I&#8217;m glad I&nbsp;did.</p>
+<p>The two tutorials I most enjoyed were those on <a class="reference external" href="https://github.com/amueller/scipy_2015_sklearn_tutorial">machine learning with
+scikit-learn</a> and <a class="reference external" href="https://github.com/chdoig/scipy2015-blaze-bokeh">using bokeh to create interactive plots</a>. Although I had
+played briefly with both packages before, these sessions offered a more
+thorough view to what can be done with them, and most importantly, <em>how</em>.
+In particular, for <a class="reference external" href="http://scikit-learn.org/">scikit-learn</a> I was struck at how well thought-out
+its built-in parameter sweeps and cross-validation machinery was, and it&#8217;s given me
+ideas for how to build similar robustness machinery for other packages, e.g.
+<a class="reference external" href="https://github.com/projectmesa/mesa">mesa</a>. I&#8217;m not entirely sure yet where I might make use of <a class="reference external" href="http://bokeh.pydata.org/">bokeh</a>, since
+ultimately plots I produce need to be exported to a printable form. However,
+for publishing data visualizations to the web it&#8217;s a great&nbsp;option.</p>
+<p>The conference itself sported three simultaneous tracks of talks, a poster
+session, and daily lightning talks. A few of my&nbsp;favorites:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/1kkFZ4P-XHg">Dask: Out-of-Core Numpy and Pandas through Task Scheduling</a>: a talk on
+<a class="reference external" href="http://dask.pydata.org/">dask</a>, which provides data structures that can do complex out-of-core
+operations with an <span class="caps">API</span> similar to numpy and&nbsp;pandas.</li>
+<li><a class="reference external" href="https://youtu.be/nddj5OA8LJo"><span class="caps">HDF5</span> is Eating the World</a>: a talk by Andrew Collette (author of <a class="reference external" href="http://www.h5py.org/">h5py</a>) on
+ways to wield <span class="caps">HDF5</span> effectively, as well as exciting new developments in <span class="caps">HDF5</span>&nbsp;itself.</li>
+<li><a class="reference external" href="https://youtu.be/TBBtOeY2Q78">Deep Learning: Tips from the Road</a>: a talk by Kyle Kastner on deep
+learning, its uses, and its limitations. This is a great, short intro to
+neural&nbsp;networks.</li>
+<li><a class="reference external" href="https://youtu.be/lcySLoprPMc">Agent Based Modeling in Python with Mesa</a>: introduction of <a class="reference external" href="https://github.com/projectmesa/mesa">mesa</a>, a new
+package that fills a hole in the python ecosystem: a package for building
+agent-based&nbsp;simulations.</li>
+<li><a class="reference external" href="https://youtu.be/_3YoaeoiIF">VisPy: Harnessing the <span class="caps">GPU</span> for Fast, High Level Visualization</a>: a great talk
+by Luke Campagnola on the capabilities of <a class="reference external" href="http://vispy.org/">VisPy</a> to generate complex visualizations
+in real time using the <span class="caps">GPU</span> and&nbsp;OpenGL.</li>
+</ul>
+<p>There are many more where that came from,&nbsp;including:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/ZSM-tmbBZ5E">Time Series Analysis for Network&nbsp;Security</a></li>
+<li><a class="reference external" href="https://youtu.be/TGGGDpb04Yc">Statistical Thinking for Data&nbsp;Science</a></li>
+<li><a class="reference external" href="https://youtu.be/X0pAhJgySxk">xray: <span class="caps">ND</span> Labeled Arrays and&nbsp;Datasets</a></li>
+<li><a class="reference external" href="https://youtu.be/JSFZ3i3WcjQ">RESTful <span class="caps">HDF</span></a></li>
+<li><a class="reference external" href="https://youtu.be/OuhtpxGuboY">Teaching with IPython/Jupyter Notebooks and&nbsp;JupyterHub</a></li>
+<li><a class="reference external" href="https://youtu.be/eYIPEDnp5C4">Accelerating Python with the Numba <span class="caps">JIT</span>&nbsp;Compiler</a></li>
+</ul>
+<p>Each day of the main conference featured a keynote, all three of which are
+worth&nbsp;watching.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://youtu.be/MNosMXFGtBE">Data Science at the New York Times by Chris&nbsp;Wiggins</a></li>
+<li><a class="reference external" href="https://youtu.be/kHdkFyGCxiY">My Data Journey with Python by Wes&nbsp;McKinney</a></li>
+<li><a class="reference external" href="https://youtu.be/5GlNDD7qbP4">State of the Tools by Jake&nbsp;VanderPlaas</a></li>
+</ul>
+<p>Since it&#8217;s impossible to attend everything, I&#8217;m extremely thankful all of these talks
+can be viewed directly on YouTube. Check out the <a class="reference external" href="https://www.youtube.com/playlist?list=PLYx7XA2nY5Gcpabmu61kKcToLz0FapmHu">full playlist</a> for plenty&nbsp;more.</p>
+<p>The last two days featured sprints. For the uninitiated: these are long blocks of time
+during which you can work on issues in a codebase collaboratively and in-person
+with others. At SciPy, however, mostly these are just a great way to get
+involved in new projects and work alongside some of the core developers. I&#8217;m
+particularly interested in machine learning applications to simulation work, so
+I split my time between working on <a class="reference external" href="http://scikit-learn.org/">scikit-learn</a> and <a class="reference external" href="https://github.com/projectmesa/mesa">mesa</a>. Although I only
+ended up submitting a couple PRs to <a class="reference external" href="http://scikit-learn.org/">scikit-learn</a> over the course of the
+weekend, I got a good sense of the structure of the packages and had memorable
+discussions with the developers. The only problem now is figuring out where
+I&#8217;m going to devote my (rather limited) time outside of graduate school to open
+source projects that aren&#8217;t <a class="reference external" href="http://mdanalysis.org">mdanalysis</a> related. The upside is there are
+really no bad&nbsp;choices.</p>
+<p>Besides all the new tools and technical developments SciPy made me aware of, what I
+value most from the conference are the people that I met and the connections I
+made with them. The scientific Python community includes some of the most
+intelligent and passionate people I&#8217;ve ever met. It was a pleasure to spend a
+week with some of&nbsp;them.</p>
 <p>&#8212;&nbsp;david</p>
-<p><a href="http://smallerthings.org/2015-introducing-mdsynthesis.html#disqus_thread">comments</a></p>                </article>
+<p><a href="http://smallerthings.org/2015-scipy.html#disqus_thread">comments</a></p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://smallerthings.org/2015-introducing-mdsynthesis.html" rel="bookmark"
+                           title="Permalink to SciPy 2015: Introducing MDSynthesis">SciPy 2015: Introducing&nbsp;MDSynthesis</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <span>Mon 29 June 2015</span>
+<span>| tags: <a href="http://smallerthings.org/tag/molecular-dynamics.html">molecular dynamics</a><a href="http://smallerthings.org/tag/data.html">data</a><a href="http://smallerthings.org/tag/science.html">science</a></span>
+</footer><!-- /.post-info -->                <p>Although I&#8217;ve announced as much on <a class="reference external" href="https://twitter.com/dotsdl/status/598638811581526016">Twitter</a>, I&#8217;m excited to present a poster
+talk this year at <a class="reference external" href="http://www.scipy2015.scipy.org">SciPy</a>. It&#8217;ll be my first time attending, and I&#8217;m looking
+forward to meeting others that are passionate in advancing science through
+software, and in particular with&nbsp;Python.</p>
+<p>I&#8217;ll ...</p>
+                <a class="readmore" href="http://smallerthings.org/2015-introducing-mdsynthesis.html">read more</a>
+<p><a href="http://smallerthings.org/2015-introducing-mdsynthesis.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>
@@ -113,26 +158,9 @@ and myself. I arrived at the hotel close to 2am the first day of the ...</p>
                 <a class="readmore" href="http://smallerthings.org/2015-software-carpentry-osu-postmortem.html">read more</a>
 <p><a href="http://smallerthings.org/2015-software-carpentry-osu-postmortem.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
             </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://smallerthings.org/2015-software-carpentry-osu.html" rel="bookmark"
-                           title="Permalink to Upcoming Software Carpentry workshop at Oklahoma State University">Upcoming Software Carpentry workshop at Oklahoma State&nbsp;University</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Wed 13 May 2015</span>
-<span>| tags: <a href="http://smallerthings.org/tag/teaching.html">teaching</a><a href="http://smallerthings.org/tag/swc.html">swc</a><a href="http://smallerthings.org/tag/software.html">software</a></span>
-</footer><!-- /.post-info -->                <p>In two weeks from today I&#8217;ll be in Stillwater, Oklahoma, teaching at my first
-<a class="reference external" href="http://software-carpentry.org/">Software Carpentry</a> workshop.  The topics
-will include learning the basics of a <a class="reference external" href="http://en.wikipedia.org/wiki/Unix_shell">Unix shell</a>, programming in <a class="reference external" href="www.python.org">python</a>, version control and collaboration with <a class="reference external" href="http://git-scm.com/">git</a>, and data management with <a class="reference external" href="http://en.wikipedia.org/wiki/SQL"><span class="caps">SQL</span></a>. Of these, perhaps <span class="caps">SQL</span> is my weakest ...</p>
-                <a class="readmore" href="http://smallerthings.org/2015-software-carpentry-osu.html">read more</a>
-<p><a href="http://smallerthings.org/2015-software-carpentry-osu.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
-    Page 1 / 4
+    Page 1 / 5
         <a href="http://smallerthings.org/index2.html">&raquo;</a>
 </p>
             </section><!-- /#content -->
