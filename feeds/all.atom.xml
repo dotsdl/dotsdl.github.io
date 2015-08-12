@@ -42,7 +42,7 @@ neural&amp;nbsp;networks.&lt;/li&gt;
 &lt;li&gt;&lt;a class="reference external" href="https://youtu.be/lcySLoprPMc"&gt;Agent Based Modeling in Python with Mesa&lt;/a&gt;: introduction of &lt;a class="reference external" href="https://github.com/projectmesa/mesa"&gt;mesa&lt;/a&gt;, a new
 package that fills a hole in the python ecosystem: a package for building
 agent-based&amp;nbsp;simulations.&lt;/li&gt;
-&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/_3YoaeoiIF"&gt;VisPy: Harnessing the &lt;span class="caps"&gt;GPU&lt;/span&gt; for Fast, High Level Visualization&lt;/a&gt;: a great talk
+&lt;li&gt;&lt;a class="reference external" href="https://youtu.be/_3YoaeoiIFI"&gt;VisPy: Harnessing the &lt;span class="caps"&gt;GPU&lt;/span&gt; for Fast, High Level Visualization&lt;/a&gt;: a great talk
 by Luke Campagnola on the capabilities of &lt;a class="reference external" href="http://vispy.org/"&gt;VisPy&lt;/a&gt; to generate complex visualizations
 in real time using the &lt;span class="caps"&gt;GPU&lt;/span&gt; and&amp;nbsp;OpenGL.&lt;/li&gt;
 &lt;/ul&gt;
