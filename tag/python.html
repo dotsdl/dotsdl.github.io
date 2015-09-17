@@ -29,99 +29,45 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://smallerthings.org/2015-scipy.html">SciPy 2015: come for the conference, stay for the&nbsp;people</a></h1>
+                    <h1 class="entry-title"><a href="http://smallerthings.org/2015-hdf5-physics-simulations.html">Answering biological questions using <span class="caps">HDF5</span> and physics-based simulation&nbsp;data</a></h1>
+<footer class="post-info">
+        <span>Thu 17 September 2015</span>
+<span>| tags: <a href="http://smallerthings.org/tag/hdf5.html">HDF5</a><a href="http://smallerthings.org/tag/python.html">python</a><a href="http://smallerthings.org/tag/pytables.html">PyTables</a><a href="http://smallerthings.org/tag/h5py.html">h5py</a><a href="http://smallerthings.org/tag/molecular-dynamics.html">molecular dynamics</a><a href="http://smallerthings.org/tag/data.html">data</a><a href="http://smallerthings.org/tag/science.html">science</a></span>
+</footer><!-- /.post-info --><p>I recently had the privilege to share a bit of my work on the <span class="caps">HDF</span> Group blog by
+way of a <a class="reference external" href="http://hdfgroup.org/wp/2015/08/answering-biological-questions-using-hdf5-and-physics-based-simulation-data/">guest post</a>. In <a class="reference external" href="http://becksteinlab.physics.asu.edu/">our lab</a> we generate increasingly large and
+diverse simulation datasets, and maintaining sanity and productivity in spite
+of these scale ups have been a challenge. This post details one approach to the
+problem, and it makes heady use of <span class="caps">HDF5</span> for efficient data storage and&nbsp;retrieval.</p>
+<p>If you have an interest in Big Data challenges and aren&#8217;t already subscribed to
+the <a class="reference external" href="http://blog.hdfgroup.org/"><span class="caps">HDF</span> Group blog</a>, one of those two things should change.&nbsp;:D</p>
+<p>&#8212;&nbsp;david</p>
+<p><a href="http://smallerthings.org/2015-hdf5-physics-simulations.html#disqus_thread">comments</a></p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://smallerthings.org/2015-scipy.html" rel="bookmark"
+                           title="Permalink to SciPy 2015: come for the conference, stay for the people">SciPy 2015: come for the conference, stay for the&nbsp;people</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <span>Tue 11 August 2015</span>
 <span>| tags: <a href="http://smallerthings.org/tag/data.html">data</a><a href="http://smallerthings.org/tag/science.html">science</a><a href="http://smallerthings.org/tag/python.html">python</a><a href="http://smallerthings.org/tag/scipy.html">scipy</a></span>
-</footer><!-- /.post-info --><p>It&#8217;s now been several weeks since I returned from my first <a class="reference external" href="http://scipy2015.scipy.org/">SciPy</a>, and I realized I
+</footer><!-- /.post-info -->                <p>It&#8217;s now been several weeks since I returned from my first <a class="reference external" href="http://scipy2015.scipy.org/">SciPy</a>, and I realized I
 had yet to actually write about it on my own blog. Well, late is better than
 never. If nothing else, the time delay has allowed the dust to settle for a
-more coherent post.&nbsp;:)</p>
-<p>Short version: <strong>SciPy was perhaps the most fun I&#8217;ve had at a&nbsp;conference.</strong></p>
-<p>Why? Several reasons. First, the audience is very diverse: most are working in
-science but many others are working in tech and software development. This is
-in contrast to many of the conferences I&#8217;ve attended which are primarily
-scientists working in my field, very few of which spend much of their time
-developing and maintaining&nbsp;software.</p>
-<p>Second, the conference itself is different than most in terms of its basic
-structure, composed&nbsp;of:</p>
-<ul class="simple">
-<li>2 days of&nbsp;tutorials</li>
-<li>3 days of main&nbsp;conference</li>
-<li>2 days of&nbsp;sprints</li>
-</ul>
-<p>Since this was my first time attending, I decided to get the full SciPy
-experience and attend the whole week. I&#8217;m glad I&nbsp;did.</p>
-<p>The two tutorials I most enjoyed were those on <a class="reference external" href="https://github.com/amueller/scipy_2015_sklearn_tutorial">machine learning with
-scikit-learn</a> and <a class="reference external" href="https://github.com/chdoig/scipy2015-blaze-bokeh">using bokeh to create interactive plots</a>. Although I had
-played briefly with both packages before, these sessions offered a more
-thorough view to what can be done with them, and most importantly, <em>how</em>.
-In particular, for <a class="reference external" href="http://scikit-learn.org/">scikit-learn</a> I was struck at how well thought-out
-its built-in parameter sweeps and cross-validation machinery was, and it&#8217;s given me
-ideas for how to build similar robustness machinery for other packages, e.g.
-<a class="reference external" href="https://github.com/projectmesa/mesa">mesa</a>. I&#8217;m not entirely sure yet where I might make use of <a class="reference external" href="http://bokeh.pydata.org/">bokeh</a>, since
-ultimately plots I produce need to be exported to a printable form. However,
-for publishing data visualizations to the web it&#8217;s a great&nbsp;option.</p>
-<p>The conference itself sported three simultaneous tracks of talks, a poster
-session, and daily lightning talks. A few of my&nbsp;favorites:</p>
-<ul class="simple">
-<li><a class="reference external" href="https://youtu.be/1kkFZ4P-XHg">Dask: Out-of-Core Numpy and Pandas through Task Scheduling</a>: a talk on
-<a class="reference external" href="http://dask.pydata.org/">dask</a>, which provides data structures that can do complex out-of-core
-operations with an <span class="caps">API</span> similar to numpy and&nbsp;pandas.</li>
-<li><a class="reference external" href="https://youtu.be/nddj5OA8LJo"><span class="caps">HDF5</span> is Eating the World</a>: a talk by Andrew Collette (author of <a class="reference external" href="http://www.h5py.org/">h5py</a>) on
-ways to wield <span class="caps">HDF5</span> effectively, as well as exciting new developments in <span class="caps">HDF5</span>&nbsp;itself.</li>
-<li><a class="reference external" href="https://youtu.be/TBBtOeY2Q78">Deep Learning: Tips from the Road</a>: a talk by Kyle Kastner on deep
-learning, its uses, and its limitations. This is a great, short intro to
-neural&nbsp;networks.</li>
-<li><a class="reference external" href="https://youtu.be/lcySLoprPMc">Agent Based Modeling in Python with Mesa</a>: introduction of <a class="reference external" href="https://github.com/projectmesa/mesa">mesa</a>, a new
-package that fills a hole in the python ecosystem: a package for building
-agent-based&nbsp;simulations.</li>
-<li><a class="reference external" href="https://youtu.be/_3YoaeoiIFI">VisPy: Harnessing the <span class="caps">GPU</span> for Fast, High Level Visualization</a>: a great talk
-by Luke Campagnola on the capabilities of <a class="reference external" href="http://vispy.org/">VisPy</a> to generate complex visualizations
-in real time using the <span class="caps">GPU</span> and&nbsp;OpenGL.</li>
-</ul>
-<p>There are many more where that came from,&nbsp;including:</p>
-<ul class="simple">
-<li><a class="reference external" href="https://youtu.be/ZSM-tmbBZ5E">Time Series Analysis for Network&nbsp;Security</a></li>
-<li><a class="reference external" href="https://youtu.be/TGGGDpb04Yc">Statistical Thinking for Data&nbsp;Science</a></li>
-<li><a class="reference external" href="https://youtu.be/X0pAhJgySxk">xray: <span class="caps">ND</span> Labeled Arrays and&nbsp;Datasets</a></li>
-<li><a class="reference external" href="https://youtu.be/JSFZ3i3WcjQ">RESTful <span class="caps">HDF</span></a></li>
-<li><a class="reference external" href="https://youtu.be/OuhtpxGuboY">Teaching with IPython/Jupyter Notebooks and&nbsp;JupyterHub</a></li>
-<li><a class="reference external" href="https://youtu.be/eYIPEDnp5C4">Accelerating Python with the Numba <span class="caps">JIT</span>&nbsp;Compiler</a></li>
-</ul>
-<p>Each day of the main conference featured a keynote, all three of which are
-worth&nbsp;watching.</p>
-<ul class="simple">
-<li><a class="reference external" href="https://youtu.be/MNosMXFGtBE">Data Science at the New York Times by Chris&nbsp;Wiggins</a></li>
-<li><a class="reference external" href="https://youtu.be/kHdkFyGCxiY">My Data Journey with Python by Wes&nbsp;McKinney</a></li>
-<li><a class="reference external" href="https://youtu.be/5GlNDD7qbP4">State of the Tools by Jake&nbsp;VanderPlas</a></li>
-</ul>
-<p>Since it&#8217;s impossible to attend everything, I&#8217;m extremely thankful all of these talks
-can be viewed directly on YouTube. Check out the <a class="reference external" href="https://www.youtube.com/playlist?list=PLYx7XA2nY5Gcpabmu61kKcToLz0FapmHu">full playlist</a> for plenty&nbsp;more.</p>
-<p>The last two days featured sprints. For the uninitiated: these are long blocks of time
-during which you can work on issues in a codebase collaboratively and in-person
-with others. At SciPy, however, mostly these are just a great way to get
-involved in new projects and work alongside some of the core developers. I&#8217;m
-particularly interested in machine learning applications to simulation work, so
-I split my time between working on <a class="reference external" href="http://scikit-learn.org/">scikit-learn</a> and <a class="reference external" href="https://github.com/projectmesa/mesa">mesa</a>. Although I only
-ended up submitting a couple PRs to <a class="reference external" href="http://scikit-learn.org/">scikit-learn</a> over the course of the
-weekend, I got a good sense of the structure of the packages and had memorable
-discussions with the developers. The only problem now is figuring out where
-I&#8217;m going to devote my (rather limited) time outside of graduate school to open
-source projects that aren&#8217;t <a class="reference external" href="http://mdanalysis.org">mdanalysis</a> related. The upside is there are
-really no bad&nbsp;choices.</p>
-<p>Besides all the new tools and technical developments SciPy made me aware of, what I
-value most from the conference are the people that I met and the connections I
-made with them. The scientific Python community includes some of the most
-intelligent and passionate people I&#8217;ve ever met. It was a pleasure to spend a
-week with a few of&nbsp;them.</p>
-<p>&#8212;&nbsp;david</p>
-<p><a href="http://smallerthings.org/2015-scipy.html#disqus_thread">comments</a></p>                </article>
+more coherent ...</p>
+                <a class="readmore" href="http://smallerthings.org/2015-scipy.html">read more</a>
+<p><a href="http://smallerthings.org/2015-scipy.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
+            </article></li>
+            </ol><!-- /#posts-list -->
 <p class="paginator">
     Page 1 / 1
 </p>
-            </aside><!-- /#featured -->
-            </ol><!-- /#posts-list -->
             </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">
