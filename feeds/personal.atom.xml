@@ -14,7 +14,7 @@ research to present, having first gone in 2012 when I was just starting out.
 I met many of Oliver&amp;#8217;s (my &lt;span class="caps"&gt;PI&lt;/span&gt;) colleagues from Oxford and elsewhere, but spent
 a good deal of the meeting finishing up some exciting results that had just
 come in. The trouble with giving a talk is that you can work on it up until
-you get to the stage&amp;#8230;so you will.&amp;nbsp;:P&lt;/p&gt;
+you get to the stage&amp;#8230;so you&amp;nbsp;will.&lt;/p&gt;
 &lt;p&gt;The meeting was great, though shaping new results into a talk with short
 turnaround was made possible by a software package I&amp;#8217;d been building called
 &lt;a class="reference external" href="http://smallerthings.org/2015-introducing-mdsynthesis.html"&gt;MDSynthesis&lt;/a&gt;, which that winter was finally in a state to be (exceptionally)
@@ -27,7 +27,7 @@ as a poster. The conversations I had there influenced big changes in the package
 that are still shaking out, one of which being the splitting out of the core
 persistence functionality into a package called &lt;a class="reference external" href="https://github.com/datreant/datreant"&gt;datreant&lt;/a&gt;. A few other devs
 from &lt;a class="reference external" href="http://www.mdanalysis.org/"&gt;MDAnalysis&lt;/a&gt; and I are now engaged with figuring out the future form of
-this package, and the results are looking to be really quite awesome.&amp;nbsp;:D&lt;/p&gt;
+this package, and the results are looking to be really quite&amp;nbsp;awesome.&lt;/p&gt;
 &lt;p&gt;Speaking of &lt;a class="reference external" href="http://www.mdanalysis.org/"&gt;MDAnalysis&lt;/a&gt;, Google Code finally gasped its last breath, and this
 forced the project to move elsewhere. Its new home became &lt;a class="reference external" href="http://github.com/mdanalysis"&gt;GitHub&lt;/a&gt;, and,
 perhaps unexpectedly, this became perhaps &lt;a class="reference external" href="http://www.mdanalysis.org/2015/12/15/The_benefit_of_social_coding/"&gt;the best thing to happen to the
