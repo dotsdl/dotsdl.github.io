@@ -1,5 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/personal.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2014-12-26T22:15:00-07:00</updated><entry><title>From Wordpress to Pelican</title><link href="http://smallerthings.org/from-wordpress-to-pelican.html" rel="alternate"></link><updated>2014-12-26T22:15:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-12-26:from-wordpress-to-pelican.html</id><summary type="html">&lt;p&gt;Back in September I decided to begin sharing some of my thoughts on science,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/personal.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2016-01-17T17:00:00-07:00</updated><entry><title>2015: A retrospective</title><link href="http://smallerthings.org/2016-retrospective-2015.html" rel="alternate"></link><updated>2016-01-17T17:00:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2016-01-17:2016-retrospective-2015.html</id><summary type="html">&lt;p&gt;It&amp;#8217;s been some time since I last posted, but that&amp;#8217;s not because I&amp;#8217;ve been
+twiddling my thumbs. The year 2015 saw some big changes, and I wanted to take some
+time to reflect and share on where we&amp;#8217;ve been (and where we&amp;#8217;re&amp;nbsp;going).&lt;/p&gt;
+&lt;p&gt;It was about a year ago when I landed in Davis, &lt;span class="caps"&gt;CA&lt;/span&gt;, to attend &lt;a class="reference external" href="http://ivory.idyll.org/blog/2014-davis-swc-training.html"&gt;Titus Brown&amp;#8217;s
+three-day Train-the-Trainers&lt;/a&gt; Software Carpentry instructor training. I met a
+lot of folks that work in bioinformatics (not my field, but not far off), as
+well as others involved in open science and open software. It was a
+transformative experience, with the practical benefit that I was &lt;a class="reference external" href="http://smallerthings.org/2015-software-carpentry-instructor.html"&gt;offically able
+to teach Software Carpentry workshops&lt;/a&gt; after finishing up some final requirements.
+I went on to teach four in 2015, and a fifth just a week&amp;nbsp;ago.&lt;/p&gt;
+&lt;p&gt;February saw &lt;a class="reference external" href="http://smallerthings.org/2015-biophysical-society-annual-meeting.html"&gt;my first trip to the Biophysical Society Annual Meeting&lt;/a&gt; with
+research to present, having first gone in 2012 when I was just starting out.
+I met many of Oliver&amp;#8217;s (my &lt;span class="caps"&gt;PI&lt;/span&gt;) colleagues from Oxford and elsewhere, but spent
+a good deal of the meeting finishing up some exciting results that had just
+come in. The trouble with giving a talk is that you can work on it up until
+you get to the stage&amp;#8230;so you will.&amp;nbsp;:P&lt;/p&gt;
+&lt;p&gt;The meeting was great, though shaping new results into a talk with short
+turnaround was made possible by a software package I&amp;#8217;d been building called
+&lt;a class="reference external" href="http://smallerthings.org/2015-introducing-mdsynthesis.html"&gt;MDSynthesis&lt;/a&gt;, which that winter was finally in a state to be (exceptionally)
+useful. It sped up my ability to slice, dice, and aggregate datasets from
+myriad simulations I had performed, taking advantage of &lt;a class="reference external" href="http://pandas.pydata.org/"&gt;pandas&lt;/a&gt; DataFrames and
+&lt;a class="reference external" href="https://hdfgroup.org/wp/2015/08/answering-biological-questions-using-hdf5-and-physics-based-simulation-data/"&gt;&lt;span class="caps"&gt;HDF5&lt;/span&gt; persistence&lt;/a&gt; to make fast exploration possible. I was on fire, and the
+Baltimore cold couldn&amp;#8217;t put me&amp;nbsp;out.&lt;/p&gt;
+&lt;p&gt;I attended my first &lt;a class="reference external" href="http://smallerthings.org/2015-scipy.html"&gt;SciPy&lt;/a&gt; conference in July, where I presented MDSynthesis
+as a poster. The conversations I had there influenced big changes in the package
+that are still shaking out, one of which being the splitting out of the core
+persistence functionality into a package called &lt;a class="reference external" href="https://github.com/datreant/datreant"&gt;datreant&lt;/a&gt;. A few other devs
+from &lt;a class="reference external" href="http://www.mdanalysis.org/"&gt;MDAnalysis&lt;/a&gt; and I are now engaged with figuring out the future form of
+this package, and the results are looking to be really quite awesome.&amp;nbsp;:D&lt;/p&gt;
+&lt;p&gt;Speaking of &lt;a class="reference external" href="http://www.mdanalysis.org/"&gt;MDAnalysis&lt;/a&gt;, Google Code finally gasped its last breath, and this
+forced the project to move elsewhere. Its new home became &lt;a class="reference external" href="http://github.com/mdanalysis"&gt;GitHub&lt;/a&gt;, and,
+perhaps unexpectedly, this became perhaps &lt;a class="reference external" href="http://www.mdanalysis.org/2015/12/15/The_benefit_of_social_coding/"&gt;the best thing to happen to the
+project in a long time&lt;/a&gt;. The great development tooling that GitHub provides
+has catalyzed a flurry of new work, and has attracted new contributors,
+including some that are now coredevs (yours truly&amp;nbsp;included).&lt;/p&gt;
+&lt;p&gt;The value GitHub added to MDAnalysis development spurred us to (finally) make a
+&lt;a class="reference external" href="https://github.com/Becksteinlab"&gt;Becksteinlab org&lt;/a&gt;, at which the open source projects incubated in our lab are
+now hosted. I&amp;#8217;m proud to be in one of those &amp;#8220;with it&amp;#8221; labs, though a challenge
+remains in getting busy lab members to actively work on projects that have a public
+face and getting them in a useful state. I think this is a culture our lab
+intends to encourage, but it&amp;#8217;s no secret that academia doesn&amp;#8217;t directly value
+this kind of work today. But we&amp;#8217;re building for the world of&amp;nbsp;tomorrow.&lt;/p&gt;
+&lt;p&gt;In October I traveled to Germany (my first time in Europe) for the &lt;a class="reference external" href="http://www.cecam.org/workshop-1214.html"&gt;&lt;span class="caps"&gt;CECAM&lt;/span&gt;
+biomolecular simulation workshop-of-workshops&lt;/a&gt; in Jülich. Despite wifi issues
+in both the venue and the hotel, &lt;a class="reference external" href="https://twitter.com/philipwfowler"&gt;Philip Fowler&lt;/a&gt; and I managed to start things
+off with a &lt;a class="reference external" href="http://philipwfowler.me/2015/10/23/software-carpentry-workshop-julich-12-13-october-2015/"&gt;Software Carpentry workshop&lt;/a&gt; that covered the Unix shell, Python,
+and Git.  Oliver and I followed this with a (too short) &lt;a class="reference external" href="https://github.com/Becksteinlab/MDAnalysis-workshop"&gt;MDAnalysis tutorial&lt;/a&gt;,
+doing things &lt;span class="caps"&gt;SWC&lt;/span&gt;-style and live coding in the &lt;a class="reference external" href="http://jupyter.org/"&gt;Jupyter notebook&lt;/a&gt; (using
+pre-made notebooks as cheat-sheets rendered with nbviewer on my phone, of
+course; we&amp;#8217;re not magicians). Both workshops were very well-received, with
+people appreciating most the interactivity and the ability to play directly
+with the library during the breakout components of the live&amp;nbsp;sessions.&lt;/p&gt;
+&lt;p&gt;In November, &lt;a class="reference external" href="https://github.com/richardjgowers"&gt;Richard Gowers&lt;/a&gt; visited our lab here in Arizona for a few weeks.
+After treating him to some authentic &lt;a class="reference external" href="http://losdosmolinosphoenix.com/"&gt;New Mexican&lt;/a&gt; food (red or green?), he and I
+got to work gutting the existing topology system of &lt;a class="reference external" href="http://www.mdanalysis.org/"&gt;MDAnalysis&lt;/a&gt;. The &lt;a class="reference external" href="https://github.com/MDAnalysis/mdanalysis/wiki/Issue363-Changes#search_word=topology"&gt;result&lt;/a&gt; is
+more performant &lt;strong&gt;and&lt;/strong&gt; more flexible (a rarity!), and should finally get merged
+ahead of the long-sought 1.0 release. We&amp;#8217;re still not finished adapting everything
+in the old topology scheme into the new one, but we&amp;#8217;re in the last 10% (where
+90% of the time is&amp;nbsp;spent).&lt;/p&gt;
+&lt;p&gt;So where does that leave us in 2016? Well, this is my last year as a graduate
+student, and I intend to defend my dissertation in the fall. I am in production
+mode at the moment preparing new simulation systems to run over the coming months.
+Once these are baking I&amp;#8217;ll be working on MDAnalysis and datreant/MDSynthesis
+core components, while also preparing my analysis codebases for the data that
+will be coming down the pipes. Writing (papers, dissertation) is also set to
+begin in the next month or so. In February I&amp;#8217;ll be presenting work that should be
+published soon at the upcoming &lt;a class="reference external" href="http://www.biophysics.org/2016meeting/Main/tabid/6230/Default.aspx"&gt;2016 Biophysical Society Annual Meeting&lt;/a&gt;.
+There&amp;#8217;s no shortage of things to do.&amp;nbsp;:)&lt;/p&gt;
+&lt;p&gt;I also hope to attend SciPy again this summer, and will be applying to job
+opportunities throughout the year in preparation for 2017. If you&amp;#8217;re an employer,
+or know of anything I might be interested in, by all means, &lt;a class="reference external" href="mailto:dotsdl&amp;#64;gmail.com"&gt;shoot me an email&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Cheers to a new&amp;nbsp;year!&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;
+</summary><category term="yearend"></category><category term="musings"></category></entry><entry><title>From Wordpress to Pelican</title><link href="http://smallerthings.org/from-wordpress-to-pelican.html" rel="alternate"></link><updated>2014-12-26T22:15:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2014-12-26:from-wordpress-to-pelican.html</id><summary type="html">&lt;p&gt;Back in September I decided to begin sharing some of my thoughts on science,
 software, and education by blogging regularly on my exploits. I&amp;#8217;d previously
 built a website on top of &lt;a class="reference external" href="https://wordpress.org/"&gt;Wordpress&lt;/a&gt; for
 &lt;a class="reference external" href="http://sundial.physics.asu.edu"&gt;Sundial&lt;/a&gt;, so I decided to go with that
