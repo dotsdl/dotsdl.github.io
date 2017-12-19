@@ -1,5 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/all.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2017-01-27T13:50:00-07:00</updated><entry><title>development log, 2017.01.27</title><link href="http://smallerthings.org/2016-devlog-01-27.html" rel="alternate"></link><published>2017-01-27T13:50:00-07:00</published><updated>2017-01-27T13:50:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2017-01-27:/2016-devlog-01-27.html</id><summary type="html">&lt;p&gt;New year, new&amp;nbsp;developments&lt;/p&gt;</summary><content type="html">&lt;p&gt;2016 was a hell of a year, for many reasons (good, not so good, and everywhere in between).
+<feed xmlns="http://www.w3.org/2005/Atom"><title>the smaller things</title><link href="http://smallerthings.org/" rel="alternate"></link><link href="http://smallerthings.org/feeds/all.atom.xml" rel="self"></link><id>http://smallerthings.org/</id><updated>2017-12-19T13:23:00-07:00</updated><entry><title>Stumbling about in 2017</title><link href="http://smallerthings.org/2017-stumbling-about.html" rel="alternate"></link><published>2017-12-19T13:23:00-07:00</published><updated>2017-12-19T13:23:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2017-12-19:/2017-stumbling-about.html</id><summary type="html">&lt;p&gt;A rambling retrospective on a strange&amp;nbsp;year&lt;/p&gt;</summary><content type="html">&lt;p&gt;I severely underestminated the degree of befuddled I would experience following
+the end of my PhD.
+After spending over half a decade in the academic world, with half of that
+fully intending to leave it for a career in industry, I found myself saddled
+with a new crisis of identity I did not anticipate.
+Despite all my preparation over the years, mentally and otherwise, I felt&amp;nbsp;adrift.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s been a year since then, and only now do I feel like I&amp;#8217;m starting to find a
+footing, something resembling solid earth.
+The post-defense hangover is morphing into clarity of purpose, but I had to
+stumble around the living room through an afternoon that lasted months for it
+to happen.
+I can&amp;#8217;t help but wonder if this is a common experience for others?
+I would love to hear your thoughts if you (yes, you!) have gone through a
+similar&amp;nbsp;period.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve read in many places that people in academia exhibit a disproportionate
+incidence of mental health disorders over the general population.
+Whether this is due to the nature of the work, or due to the self-selection of
+(often eccentric by nature) personalities it attracts, or both, is still an
+open question.  But coming out of it, I learned there were many aspects of my
+personality that were ill-suited to the world outside.  I also learned how
+dependent I was on the environment for holding together whatever it was that
+was there, and without that glue, I felt like my sense of self was falling into
+pieces around&amp;nbsp;me.&lt;/p&gt;
+&lt;p&gt;2017 was a weird year.
+This is an understatement for many reasons, and I&amp;#8217;m certain for many people
+besides myself.
+I sought to find identity in new relationships, new activities, new things.
+In all these areas, in different ways, I failed.
+And now, at the end of 2017, I stand at the precipice of a new year with much
+of the old already cleared away.
+I would have expected to be in a deep depression from this, but instead I feel
+an internal peace and joy that I can&amp;#8217;t quite put words&amp;nbsp;to.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve started the process of becoming my own friend.
+I believe for a long time I&amp;#8217;ve avoided a friendship with myself, a real respect
+and care for the person I&amp;#8217;m stuck with for life.
+I did my damnedest to distract myself from his inadequacies, his failures, his
+stupidity, often attempting to do so with more stupidity.
+This of course didn&amp;#8217;t work.
+But out of this mess I believe I&amp;#8217;ve found a new love, and his name is&amp;nbsp;David.&lt;/p&gt;
+&lt;p&gt;Perhaps this was not the usual retrospective one might post on a personal blog.
+It&amp;#8217;s also not something I&amp;#8217;d normally share, but frankly, I think it worth
+sharing.
+We all try to project an image of being &amp;#8220;put-together&amp;#8221; at all times, to keep up
+appearances, to show maturity.
+But we&amp;#8217;re not always put-together, and many of us may regularly be
+high-functioning dysfunctionals in&amp;nbsp;life.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m feeling well for 2018.
+I look forward to spending it with all of you, another year around the star on
+this lovely rock we call home.
+Cheers to new&amp;nbsp;adventures.&lt;/p&gt;
+&lt;p&gt;&amp;#8212;&amp;nbsp;david&lt;/p&gt;</content><category term="life"></category><category term="purpose"></category><category term="social"></category></entry><entry><title>development log, 2017.01.27</title><link href="http://smallerthings.org/2016-devlog-01-27.html" rel="alternate"></link><published>2017-01-27T13:50:00-07:00</published><updated>2017-01-27T13:50:00-07:00</updated><author><name>dotsdl</name></author><id>tag:smallerthings.org,2017-01-27:/2016-devlog-01-27.html</id><summary type="html">&lt;p&gt;New year, new&amp;nbsp;developments&lt;/p&gt;</summary><content type="html">&lt;p&gt;2016 was a hell of a year, for many reasons (good, not so good, and everywhere in between).
 I&amp;#8217;m hoping to share more about last year in a retrospective in the next week, but as part of the new year we are now living in, I wanted to start doing a weekly-ish series on what I&amp;#8217;ve been up to on development&amp;nbsp;fronts.&lt;/p&gt;
 &lt;p&gt;I&amp;#8217;m now employed by the &lt;a href="http://becksteinlab.physics.asu.edu/"&gt;Beckstein Lab&lt;/a&gt; as a research software engineer, and with this role comes a shift in my focus to software development.
 Over the course of my PhD I built a &lt;a href="http://datreant.org/"&gt;few&lt;/a&gt; &lt;a href="https://github.com/datreant/MDSynthesis"&gt;software&lt;/a&gt; &lt;a href="https://github.com/Becksteinlab/mdworks"&gt;libraries&lt;/a&gt; and contributed to at least a &lt;a href="http://www.mdanalysis.org/"&gt;couple&lt;/a&gt; &lt;a href="https://github.com/materialsproject/fireworks"&gt;others&lt;/a&gt;.
