@@ -29,74 +29,19 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://smallerthings.org/2016-devlog-01-27.html">development log,&nbsp;2017.01.27</a></h1>
+                    <h1 class="entry-title"><a href="http://smallerthings.org/2015-hdf5-physics-simulations.html">Answering biological questions using <span class="caps">HDF5</span> and physics-based simulation&nbsp;data</a></h1>
 <footer class="post-info">
-        <span>Fri 27 January 2017</span>
-<span>| tags: <a href="http://smallerthings.org/tag/python.html">python</a><a href="http://smallerthings.org/tag/engineering.html">engineering</a><a href="http://smallerthings.org/tag/development.html">development</a></span>
-</footer><!-- /.post-info --><p>2016 was a hell of a year, for many reasons (good, not so good, and everywhere in between).
-I&#8217;m hoping to share more about last year in a retrospective in the next week, but as part of the new year we are now living in, I wanted to start doing a weekly-ish series on what I&#8217;ve been up to on development&nbsp;fronts.</p>
-<p>I&#8217;m now employed by the <a href="http://becksteinlab.physics.asu.edu/">Beckstein Lab</a> as a research software engineer, and with this role comes a shift in my focus to software development.
-Over the course of my PhD I built a <a href="http://datreant.org/">few</a> <a href="https://github.com/datreant/MDSynthesis">software</a> <a href="https://github.com/Becksteinlab/mdworks">libraries</a> and contributed to at least a <a href="http://www.mdanalysis.org/">couple</a> <a href="https://github.com/materialsproject/fireworks">others</a>.
-My efforts over the next few months (it&#8217;s a short contract) are geared almost exclusively toward finishing up loose ends on many of these projects, plus at least one brand new one.
-These projects form the core of our software stack, so getting them on a solid footing before I leave is&nbsp;high-priority.</p>
-<p>As the first entry in this series, I think it&#8217;s worthwhile to share the current status of these projects (from my perspective), and where I&#8217;m hoping/expecting them to go.
-The opportunity to have a focus on software in an academic setting is not common, so I really hope we can come out on the other end with some real interesting developments.&nbsp;:)</p>
-<h1>datreant</h1>
-<p>Of all my software projects, <a href="http://datreant.org/"><code>datreant</code></a> is the library I poured the most effort into during my PhD, and it forms the core of my software environment.
-Since I work with simulation data that can&#8217;t easily be shoehorned into a database solution, this library gives a database-ish abstract interface to the filesystem, making it possible to work with my data at a high level while still being able to drill down to any level of detail.
-This interface is also used heavily for my workflow automation, since it makes writing code that refers to filesystem components (files, directories) in an object-oriented way totally&nbsp;cake.</p>
-<p>This library is pretty stable in terms of its overall behavior, though the <a href="https://github.com/datreant/datreant.core/issues">issue tracker</a> has a lot of things that are wide open and need to be resolved.
-Some of these are relatively easy, but others will take some more thought.
-My hope is to get at least one, if not two, releases out before I&#8217;m finished here.
-I&#8217;ll probably continue to work on <code>datreant</code> after my time in the lab is up, however.
-It&#8217;s a bit unique, and I think has a lot of potential use for a lot of people.
-More on that&nbsp;soon.</p>
-<h1>MDSynthesis</h1>
-<p><code>datreant</code> started life as <a href="https://github.com/datreant/MDSynthesis"><strong>MDSynthesis</strong></a>, a library I developed to maintain my sanity in the face of increasing volume and variety of simulation data I was collecting.
-Eventually the molecular dynamics-agnostic pieces of <strong>MDSynthesis</strong> were stripped out and became <code>datreant</code>, leaving <strong>MDSynthesis</strong> itself as a pretty light library by comparison.
-This library is how I use <code>datreant</code> in practice, since it gives a lot of convenient functionality for working with <span class="caps">MD</span>&nbsp;data.</p>
-<p><strong>MDSynthesis</strong> isn&#8217;t a large codebase, and I&#8217;d like to keep it that way.
-Over the past few months I&#8217;ve been leaning more toward making <code>datreant</code>, in particular <code>datreant.core</code>, the recommended library for doing all things datreant-like, and leaving <strong>MDSynthesis</strong> in maintenance mode.
-The trouble with the library is that by its nature it can tend to accumulate a lot of <em>ad hoc</em> components, and it also has to track the development of both <code>datreant</code> and <strong>MDAnalysis</strong>, which makes it a bit a of a pain to maintain.
-In a world of limited time and energy, I&#8217;m more prone to say that users use <code>datreant</code> and roll their own conveniences for working with their data, even if they&#8217;re doing <span class="caps">MD</span>, but on the other hand <strong>MDSynthesis</strong> remains a nice little library with incredible&nbsp;utility.</p>
-<p>Future uncertain, but for now it persists.
-If anyone is interested in taking on more of a maintenance role for this library, get in&nbsp;touch.</p>
-<h1>MDAnalysis</h1>
-<p><a href="http://www.mdanalysis.org/"><strong>MDAnalysis</strong></a> has a strong developer base, and my contributions over the last year have been mostly in design discussions and as co-developer of the <a href="https://github.com/MDAnalysis/mdanalysis/pull/815">shiny, new topology system</a>.
-There&#8217;s a lot of cool stuff coming through the pipe in the next release, and I&#8217;m not concerned about the library&#8217;s&nbsp;future.</p>
-<p>Over the next few months I&#8217;m hoping we can get <a href="https://github.com/MDAnalysis/mdanalysis/issues/878">pickling finally working for all objects</a> so that parallelization can work more generally and as users expect, not just in a shared-memory environment as it does currently.
-Since the new topology system encapsulates things much more cleanly in the <code>Universe</code> object, this should be very doable, but we just have yet to settle on a specific choice of solution.
-I&#8217;m hoping to scrape together a chunk of time to put forth a working proposal; I already have a <a href="https://github.com/MDAnalysis/mdanalysis/pull/831">prototype of a piece of this</a> from a long time ago, but it needs to be picked up&nbsp;again.</p>
-<p><strong>MDAnalysis</strong> is a great library with a great existing team, and so I&#8217;m likely to put my larger efforts elsewhere over the next few months.
-I&#8217;m still going to be involved in discussions, though, since I think I&#8217;m recognized among the group as someone who thinks a lot about the implications of design choices, duplication of effort and interfaces,&nbsp;etc.</p>
-<h1>mdworks</h1>
-<p><a href="https://github.com/Becksteinlab/mdworks"><code>mdworks</code></a> is a prototype Python module with building blocks for building workflow graphs using <a href="https://pythonhosted.org/FireWorks/">Fireworks</a>, an automated workflow engine we&#8217;ve started using in the lab.
-It&#8217;s very early development, and mostly functions as a code dump of things I currently use, but the things currently present are fairly&nbsp;general-purpose.</p>
-<p>The trouble with using automated workflows is that they require not only code to generate the graphs, but also the infrastructure to serve and execute them, so it&#8217;s nontrivial to get up and running.
-One of my tasks over the next few months is to get <code>mdworks</code> into a state that&#8217;s fairly usable by other members in the lab (which means clear documentation, understandable design choices, functional pieces) and also provide what&#8217;s needed to get up and running infrastructure-wise (the hard&nbsp;part).</p>
-<p>I strongly believe using automated workflows is the way forward in this field, and if we can achieve our goals here it can pay dividends well into the future.
-We can ask more complicated questions much more easily when the logistics of computing are largely fire-and-forget, and it makes expensive human time available for doing other&nbsp;things.</p>
-<h1>alchemlyb</h1>
-<p>The final software project of note that I&#8217;m putting effort into is <a href="https://github.com/alchemistry/alchemlyb"><code>alchemlyb</code></a>.
-This library aims to make doing so-called <em>alchemical</em> free energy calculations easier for the average computationalist, providing machinery for parsing data, preprocessing it, estimating free energies, and checking convergence and robustness.
-It comes as a response to the rather wild-west nature of doing these calculations once you have data to do them with, as most every lab has their own in-house code to do these calculations.
-This is a lot of duplication of effort, and it&#8217;s prone to error.
-Existing solutions that are publicly available, such as <a href="https://github.com/MobleyLab/alchemical-analysis"><code>alchemical-analysis.py</code></a>, although perhaps correct and useful, are often monolithic and inflexible.
-These also generally don&#8217;t scale beyond single-machine use, so growing datasets become a&nbsp;problem.</p>
-<p>The development of this library is an informal collaboration between several folks in the field, with me loosely heading up the project (since I&#8217;m paid to do software, not strictly science).
-Because it is pretty well-defined from the start (these kind of calculations have the benefit of years of experience behind them), I think we can stand this library up within the next few months and push out at least a couple releases.
-Because of the community interest I&#8217;m not worried that we won&#8217;t have maintenance long-term, but there&#8217;s a lot of work to be done yet.
-This next week we&#8217;re laying out issues for all the major components so discussion and development can begin in&nbsp;earnest.</p>
-<p>This is an exciting effort, the results of which should be a firm software foundation going forward for the field.
-I&#8217;m a strong believer in the idea that in order for us to focus our efforts on new, harder things, we have to make established techniques routine and easy.
-This is a specific effort to make that so for alchemical free energy&nbsp;calculations.</p>
-<p>Check out <a href="https://gist.github.com/dotsdl/a41e5756a58e1775e3e3a915f07bfd37">this gist</a> if you&#8217;re interested in the design ideas behind this&nbsp;library.</p>
-<h1>Let&#8217;s get to&nbsp;work</h1>
-<p>Obviously from this list there is no shortage of things to do, and I&#8217;m realistic enough to know that we probably can&#8217;t achieve everything.
-We will, try, though, with the aim of inching forward to stability.
-There are relatively few people in the lab who&#8217;ve taken an interest in software engineering as I have, so the stack needs to persist long enough to survive without another software-focused person around to keep things going.
-Whether that works out, only time will&nbsp;tell.</p>
-<p>&#8212;&nbsp;david</p><p><a href="http://smallerthings.org/2016-devlog-01-27.html#disqus_thread">comments</a></p>                </article>
+        <span>Thu 17 September 2015</span>
+<span>| tags: <a href="http://smallerthings.org/tag/hdf5.html">HDF5</a><a href="http://smallerthings.org/tag/python.html">python</a><a href="http://smallerthings.org/tag/pytables.html">PyTables</a><a href="http://smallerthings.org/tag/h5py.html">h5py</a><a href="http://smallerthings.org/tag/molecular-dynamics.html">molecular dynamics</a><a href="http://smallerthings.org/tag/data.html">data</a><a href="http://smallerthings.org/tag/science.html">science</a></span>
+</footer><!-- /.post-info --><p>I recently had the privilege to share a bit of my work on the <span class="caps">HDF</span> Group blog by
+way of a <a class="reference external" href="http://hdfgroup.org/wp/2015/08/answering-biological-questions-using-hdf5-and-physics-based-simulation-data/">guest post</a>. In <a class="reference external" href="http://becksteinlab.physics.asu.edu/">our lab</a> we generate increasingly large and
+diverse simulation datasets, and maintaining sanity and productivity in spite
+of these scale ups have been a challenge. This post details one approach to the
+problem, and it makes heady use of <span class="caps">HDF5</span> for efficient data storage and&nbsp;retrieval.</p>
+<p>If you have an interest in Big Data challenges and aren&#8217;t already subscribed to
+the <a class="reference external" href="http://blog.hdfgroup.org/"><span class="caps">HDF</span> Group blog</a>, one of those two things should change.&nbsp;:D</p>
+<p>&#8212;&nbsp;david</p>
+<p><a href="http://smallerthings.org/2015-hdf5-physics-simulations.html#disqus_thread">comments</a></p>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -104,40 +49,24 @@ Whether that works out, only time will&nbsp;tell.</p>
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="http://smallerthings.org/2016-scipy-datreant.html" rel="bookmark"
-                           title="Permalink to datreant at SciPy">datreant at&nbsp;SciPy</a></h1>
+                    <h1><a href="http://smallerthings.org/2015-scipy.html" rel="bookmark"
+                           title="Permalink to SciPy 2015: come for the conference, stay for the people">SciPy 2015: come for the conference, stay for the&nbsp;people</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <span>Thu 22 September 2016</span>
-<span>| tags: <a href="http://smallerthings.org/tag/python.html">python</a><a href="http://smallerthings.org/tag/data.html">data</a><a href="http://smallerthings.org/tag/filesystems.html">filesystems</a></span>
-</footer><!-- /.post-info -->                <p>I gave a talk at SciPy 2016 on&nbsp;datreant.</p>
-                <a class="readmore" href="http://smallerthings.org/2016-scipy-datreant.html">read more</a>
-<p><a href="http://smallerthings.org/2016-scipy-datreant.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://smallerthings.org/2015-hdf5-physics-simulations.html" rel="bookmark"
-                           title="Permalink to Answering biological questions using HDF5 and physics-based simulation data">Answering biological questions using <span class="caps">HDF5</span> and physics-based simulation&nbsp;data</a></h1>
-                </header>
-
-                <div class="entry-content">
-<footer class="post-info">
-        <span>Thu 17 September 2015</span>
-<span>| tags: <a href="http://smallerthings.org/tag/hdf5.html">HDF5</a><a href="http://smallerthings.org/tag/python.html">python</a><a href="http://smallerthings.org/tag/pytables.html">PyTables</a><a href="http://smallerthings.org/tag/h5py.html">h5py</a><a href="http://smallerthings.org/tag/molecular-dynamics.html">molecular dynamics</a><a href="http://smallerthings.org/tag/data.html">data</a><a href="http://smallerthings.org/tag/science.html">science</a></span>
-</footer><!-- /.post-info -->                <p>I recently had the privilege to share a bit of my work on the <span class="caps">HDF</span> Group blog by
-way of a <a class="reference external" href="http://hdfgroup.org/wp/2015/08/answering-biological-questions-using-hdf5-and-physics-based-simulation-data/">guest post</a>. In <a class="reference external" href="http://becksteinlab.physics.asu.edu/">our lab</a> we generate increasingly large and
-diverse simulation datasets, and maintaining sanity and productivity in spite
-of these scale ups have been a challenge. This …</p>
-                <a class="readmore" href="http://smallerthings.org/2015-hdf5-physics-simulations.html">read more</a>
-<p><a href="http://smallerthings.org/2015-hdf5-physics-simulations.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
+        <span>Tue 11 August 2015</span>
+<span>| tags: <a href="http://smallerthings.org/tag/data.html">data</a><a href="http://smallerthings.org/tag/science.html">science</a><a href="http://smallerthings.org/tag/python.html">python</a><a href="http://smallerthings.org/tag/scipy.html">scipy</a></span>
+</footer><!-- /.post-info -->                <p>It&#8217;s now been several weeks since I returned from my first <a class="reference external" href="http://scipy2015.scipy.org/">SciPy</a>, and I realized I
+had yet to actually write about it on my own blog. Well, late is better than
+never. If nothing else, the time delay has allowed the dust to settle for a
+more coherent …</p>
+                <a class="readmore" href="http://smallerthings.org/2015-scipy.html">read more</a>
+<p><a href="http://smallerthings.org/2015-scipy.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
             </article></li>
             </ol><!-- /#posts-list -->
 <p class="paginator">
-    Page 1 / 2
-        <a href="http://smallerthings.org/tag/python2.html">&raquo;</a>
+    Page 1 / 1
 </p>
             </section><!-- /#content -->
         <section id="extras" class="body">

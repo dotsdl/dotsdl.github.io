@@ -29,46 +29,51 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://smallerthings.org/2016-blogging-at-bps.html">Blogging at <span class="caps">BPS</span>&nbsp;2016!</a></h1>
-<footer class="post-info">
-        <span>Thu 25 February 2016</span>
-<span>| tags: <a href="http://smallerthings.org/tag/blogging.html">blogging</a><a href="http://smallerthings.org/tag/biophysics.html">biophysics</a><a href="http://smallerthings.org/tag/conference.html">conference</a></span>
-</footer><!-- /.post-info --><p>The <a href="https://www.biophysics.org/2016meeting/">2016 Biophysical Society Annual Meeting</a> 
-in Los Angeles begins this Saturday, and I&#8217;m happy to announce that I&#8217;ll be
-blogging for the <a href="https://biophysicalsociety.wordpress.com/">conference blog</a>
-during the course of the week. My focus will be on new developments in
-software, particularly open source&nbsp;projects. </p>
-<p>If you have a project you&#8217;d like some exposure for, or just want to talk shop,
-feel free to ping me on twitter (<a href="https://twitter.com/dotsdl">@dotsdl</a>). See
-you in <span class="caps">LA</span>!</p>
-<p>&#8212;&nbsp;david</p><p><a href="http://smallerthings.org/2016-blogging-at-bps.html#disqus_thread">comments</a></p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <ol id="posts-list" class="hfeed">
-
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://smallerthings.org/from-wordpress-to-pelican.html" rel="bookmark"
-                           title="Permalink to From Wordpress to Pelican">From Wordpress to&nbsp;Pelican</a></h1>
-                </header>
-
-                <div class="entry-content">
+                    <h1 class="entry-title"><a href="http://smallerthings.org/from-wordpress-to-pelican.html">From Wordpress to&nbsp;Pelican</a></h1>
 <footer class="post-info">
         <span>Fri 26 December 2014</span>
 <span>| tags: <a href="http://smallerthings.org/tag/blogging.html">blogging</a><a href="http://smallerthings.org/tag/pelican.html">pelican</a><a href="http://smallerthings.org/tag/wordpress.html">wordpress</a></span>
-</footer><!-- /.post-info -->                <p>Back in September I decided to begin sharing some of my thoughts on science,
+</footer><!-- /.post-info --><p>Back in September I decided to begin sharing some of my thoughts on science,
 software, and education by blogging regularly on my exploits. I&#8217;d previously
 built a website on top of <a class="reference external" href="https://wordpress.org/">Wordpress</a> for
 <a class="reference external" href="http://sundial.physics.asu.edu">Sundial</a>, so I decided to go with that
-<span class="caps">CMS</span>. I purchased a domain name through <a class="reference external" href="https://www.godaddy.com/">GoDaddy …</a></p>
-                <a class="readmore" href="http://smallerthings.org/from-wordpress-to-pelican.html">read more</a>
-<p><a href="http://smallerthings.org/from-wordpress-to-pelican.html#disqus_thread">comments</a></p>                </div><!-- /.entry-content -->
-            </article></li>
-            </ol><!-- /#posts-list -->
+<span class="caps">CMS</span>. I purchased a domain name through <a class="reference external" href="https://www.godaddy.com/">GoDaddy</a>,
+and out of convenience purchased Wordpress hosting through them as&nbsp;well.</p>
+<p>Wordpress is a fine <span class="caps">CMS</span>, but I despised writing in the built-in editor. I&#8217;m
+a vim nerd, and really wanted to write in plaintext in my editor of choice.
+Also, I wanted to start sharing code snippets and <a class="reference external" href="http://ipython.org/notebook.html">iPython notebooks</a>, and Wordpress was appearing an awkward
+choice at best for&nbsp;this.</p>
+<p>Enter <a class="reference external" href="http://blog.getpelican.com/">pelican</a>, a static site generator
+written in Python that uses ReStructuredText as the markup of choice
+for articles. It took a little time to set up, but most of this was
+spent trying to approximate my old blog&#8217;s look by way of a <a class="reference external" href="https://github.com/dotsdl/pelican-bluemoon">custom theme</a>.</p>
+<p>If you&#8217;re interested in blogging with a statically-generated site through
+pelican, start by installing the python module locally with&nbsp;pip:</p>
+<pre class="literal-block">
+pip install --user pelican
+</pre>
+<p>Then build a skeleton that includes everything you need to get started&nbsp;with:</p>
+<pre class="literal-block">
+pelican-quickstart
+</pre>
+<p>The <a class="reference external" href="http://docs.getpelican.com/">pelican docs</a> have up-to-date information
+on how to&nbsp;proceed.</p>
+<p>Since pelican generates static html files, they can be cheaply hosted. In fact,
+<a class="reference external" href="https://github.com">GitHub</a> provides free page hosting via <a class="reference external" href="https://pages.github.com/">GitHub Pages</a>. I created a <a class="reference external" href="https://github.com/dotsdl/dotsdl.github.io">repository for my site</a> and edited the Makefile included
+in my pelican project directory to point to it. This allows me to regenerate
+and publish my static site&nbsp;with:</p>
+<pre class="literal-block">
+make github
+</pre>
+<p>It doesn&#8217;t get much easier. I&#8217;m very&nbsp;pleased.</p>
+<p><span class="caps">EDIT</span>: I have added my <a class="reference external" href="https://github.com/dotsdl/smallerthings">blog source to GitHub</a>. Perhaps if you&#8217;re having trouble
+getting something working it will be of&nbsp;help.</p>
+<p><a href="http://smallerthings.org/from-wordpress-to-pelican.html#disqus_thread">comments</a></p>                </article>
 <p class="paginator">
     Page 1 / 1
 </p>
+            </aside><!-- /#featured -->
+            </ol><!-- /#posts-list -->
             </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">
