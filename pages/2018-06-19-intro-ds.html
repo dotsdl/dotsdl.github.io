@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Learn Data Science Phoenix - Intro to Data Analysis with&nbsp;Pandas</title>
+        <link rel="stylesheet" href="http://smallerthings.org/theme/css/main.css" />
+        <link href="http://smallerthings.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="the smaller things Atom Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://smallerthings.org/">the smaller things  <strong>states & transitions</strong></a></h1>
+                <nav><ul>
+    
+                        <li><a href="http://smallerthings.org/pages/about.html">about&nbsp;me</a></li>
+    
+                        <li><a href="http://smallerthings.org/pages/notes.html">notes</a></li>
+                    <li><a href="http://smallerthings.org/category/education.html">education</a></li>
+                    <li><a href="http://smallerthings.org/category/personal.html">personal</a></li>
+                    <li><a href="http://smallerthings.org/category/science.html">science</a></li>
+                    <li><a href="http://smallerthings.org/category/software.html">software</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Learn Data Science Phoenix - Intro to Data Analysis with&nbsp;Pandas</h1>
+    
+    <p>Below you will find the installation instructions for everything you&#8217;ll need to participate in the <a href="https://www.eventbrite.com/e/learn-data-science-phoenix-hands-on-intro-with-pandas-and-matplotlib-tickets-31827097706">Intro to Data Analysis with Pandas</a> workshop organized by <a href="http://www.galvanize.com/campuses/phoenix-warehouse-district/">Galvanize Phoenix</a> and hosted by <a href="http://vincentbenjamin.com/">VincentBenjamin</a>.
+These instructions are taken from <a href="https://software-carpentry.org/">Software Carpentry</a>, an organization that teaches researchers in science, engineering, medicine, and related disciplines the computing skills they need to get more done in less time and with less&nbsp;pain.</p>
+<p>After installing these things, you will have everything you need for this workshop, and much of what you need for doing data science with Python beyond it.
+Please install each component <strong>before</strong> arriving, as we will not have the time or network bandwidth to install everything at the venue when the event begins.
+We look forward to seeing you&nbsp;there!</p>
+<h1>Overview</h1>
+<p>You will need to&nbsp;install</p>
+<ol>
+<li><a href="#shell">The Bash&nbsp;Shell</a></li>
+<li><a href="#git">Git</a></li>
+<li>a <a href="#editor">text editor</a> (by default, <code>nano</code>)</li>
+<li><a href="#python">Python</a> (including a number of additional packages required for scientific computing and data&nbsp;science)</li>
+</ol>
+<p>In each section, find the instructions for your operating system (Windows, Mac <span class="caps">OS</span> X, or&nbsp;Linux).</p>
+<p>Once you have installed everything, <a href="#testing">test your installation</a>.</p>
+<h1>Setup</h1>
+<p>
+  To participate in the workshop, you will need access to the software described below.
+  In addition, you will need an up-to-date web&nbsp;browser.
+</p>
+
+<p>
+  Software Carpentry maintains a list of common issues that occur during installation as a reference for instructors that may be useful on the <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+</p>
+
+<div id="shell"> <!-- Start of 'shell' section. -->
+  <h2>The Bash&nbsp;Shell</h2>
+
+  <p>
+    Bash is a commonly-used shell that gives you the power to do simple tasks more&nbsp;quickly.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="shell-windows">Windows</h4>
+      <ol>
+        <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
+        <li>Run the installer and follow the steps bellow:
+          <ol>
+            <!-- Git 2.6.1 Setup -->
+            <!-- Welcome to the Git Setup Wizard -->
+            <li>Click on&nbsp;&#8220;Next&#8221;.</li>
+            <!-- Information -->
+            <li>Click on&nbsp;&#8220;Next&#8221;.</li>
+            <!-- Select Destination Location -->
+            <li>Click on&nbsp;&#8220;Next&#8221;.</li>
+            <!-- Select Components -->
+            <li>Click on&nbsp;&#8220;Next&#8221;.</li>
+            <!-- Select Start Menu Folder -->
+            <li>Click on&nbsp;&#8220;Next&#8221;.</li>
+            <!-- Adjusting your PATH environment -->
+            <li>
+              <strong>
+                Select &#8220;Use Git from the Windows Command Prompt&#8221; and click on &#8220;Next&#8221;.
+              </strong>
+                If you forgot to do this programs that you need for the workshop will not work properly.
+                If this happens rerun the installer and select the appropriate&nbsp;option.
+            </li>
+            <!-- Configuring the line ending conversions -->
+            <li>
+              Click on &#8220;Next&#8221;.
+              <strong>
+                Keep &#8220;Checkout Windows-style, commit Unix-style line endings&#8221;&nbsp;selected.
+              </strong>
+            </li>
+            <!-- Configuring the terminal emulator to use with Git Bash -->
+            <li>
+              <strong>
+                Select &#8220;Use Windows&#8217; default console window&#8221; and click on&nbsp;&#8220;Next&#8221;.
+              </strong>
+            </li>
+            <!-- Configuring experimental performance tweaks -->
+            <li>Click on&nbsp;&#8220;Next&#8221;.</li>
+            <!-- Installing -->
+            <!-- Completing the Git Setup Wizard -->
+            <li>Click on&nbsp;&#8220;Finish&#8221;.</li>
+          </ol>
+        </li>
+      </ol>
+      <p>This will provide you with both Git and Bash in the Git Bash&nbsp;program.</p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-macosx">Mac <span class="caps">OS</span>&nbsp;X</h4>
+      <p>
+        The default shell in all versions of Mac <span class="caps">OS</span> X is Bash, so no
+        need to install anything.  You access Bash from the Terminal
+        (found in
+        <code>/Applications/Utilities</code>). You may want to keep
+        Terminal in your dock for this&nbsp;workshop.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-linux">Linux</h4>
+      <p>
+        The default shell is usually Bash, but if your
+        machine is set up differently you can run it by opening a
+        terminal and typing <code>bash</code>.  There is no need to
+        install&nbsp;anything.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- End of 'shell' section. -->
+
+<div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
+           is given at https://help.github.com/articles/supported-browsers/-->
+  <h2>Git</h2>
+
+  <p>
+    Git is a version control system that lets you track who made changes
+    to what when and has options for easily updating a shared or public
+    version of your code
+    on <a href="https://github.com/">github.com</a>. You will need a
+    <a href="https://help.github.com/articles/supported-browsers/">supported</a>
+    web browser (current versions of Chrome, Firefox or Safari,
+    or Internet Explorer version 9 or&nbsp;above).
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="git-windows">Windows</h4>
+      <p>
+        Git should be installed on your computer as part of your Bash
+        install (described&nbsp;above).
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="git-macosx">Mac <span class="caps">OS</span>&nbsp;X</h4>
+      <p>
+        <strong>For <span class="caps">OS</span> X 10.9 and higher</strong>, install Git for Mac
+        by downloading and running the most recent &#8220;mavericks&#8221; installer from
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
+        After installing Git, there will not be anything in your <code>/Applications</code> folder,
+        as Git is a command line program.
+        <strong>For older versions of <span class="caps">OS</span> X (10.5-10.8)</strong> use the
+        most recent available installer labelled &#8220;snow-leopard&#8221;
+        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="git-linux">Linux</h4>
+      <p>
+        If Git is not already available on your machine you can try to
+        install it via your distro&#8217;s package manager. For Debian/Ubuntu run
+        <code>sudo apt-get install git</code> and for Fedora run
+        <code>sudo yum install git</code>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- End of 'Git' section. -->
+
+<div id="editor"> <!-- Start of 'editor' section. -->
+  <h2>Text&nbsp;Editor</h2>
+
+  <p>
+    When you&#8217;re writing code, it&#8217;s nice to have a text editor that is
+    optimized for writing code, with features like automatic
+    color-coding of key words.  The default text editor on Mac <span class="caps">OS</span> X and
+    Linux is usually set to Vim, which is not famous for being
+    intuitive.  if you accidentally find yourself stuck in it, try
+    typing the escape key, followed by <code>:q!</code> (colon, lower-case &#8216;q&#8217;,
+    exclamation mark), then hitting Return to return to the&nbsp;shell.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="editor-windows">Windows</h4>
+      <p>
+        nano is a basic editor and the default that is used in the class.
+        To install it,
+        download the <a href="http://files.software-carpentry.org/SWCarpentryInstaller.exe">Software Carpentry Windows installer</a>
+        and double click on the file to run it.
+        <strong>This installer requires an active internet&nbsp;connection.</strong>
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="http://notepad-plus-plus.org/">Notepad++</a> or
+        <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="https://atom.io/">Atom</a>.
+        <strong>Be aware that you must
+          add its installation directory to your system path.</strong>
+        Please ask your instructor to help you do&nbsp;this.
+      </p>
+      </div>
+    <div class="col-md-4">
+
+    <div class="col-md-4">
+      <h4 id="editor-macosx">Mac <span class="caps">OS</span>&nbsp;X</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        It should be&nbsp;pre-installed.
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="http://www.barebones.com/products/textwrangler/">Text Wrangler</a> or
+        <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="https://atom.io/">Atom</a>.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="editor-linux">Linux</h4>
+      <p>
+        nano is a basic editor and the default that instructors use in the workshop.
+        It should be&nbsp;pre-installed.
+      </p>
+      <p>
+        Others editors that you can use are
+        <a href="https://wiki.gnome.org/Apps/Gedit">Gedit</a>,
+        <a href="http://kate-editor.org/">Kate</a> or
+        <a href="http://www.sublimetext.com/">Sublime Text</a>, <a href="https://atom.io/">Atom</a>.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'editor' section. -->
+
+<div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
+           the workshop will teach Python using something other than
+           the IPython notebook.
+           Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
+  <h2>Python</h2>
+
+  <p>
+    <a href="http://python.org">Python</a> is a popular language for
+    scientific computing, and great for general-purpose programming as
+    well.  Installing all of its scientific packages individually can be
+    a bit difficult, so we recommend
+    <a href="https://www.continuum.io/anaconda">Anaconda</a>,
+    an all-in-one&nbsp;installer.
+  </p>
+
+    <p>
+      Regardless of how you choose to install it,
+      <strong>please make sure you install Python version 3.x</strong>
+      (e.g., 3.4 or 3.5 is&nbsp;fine).
+    </p>
+
+    <p>
+      We will teach Python using the Jupyter notebook, a programming environment
+      that runs in a web browser. For this to work you will need a reasonably
+      up-to-date browser. The current versions of the Chrome, Safari and
+      Firefox browsers are all <a
+      href='http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility'>supported</a>
+      (some older browsers, including Internet Explorer version 9
+      and below, are&nbsp;not).
+      </p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+      <h4 id="python-windows">Windows</h4>
+      <ol>
+        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web&nbsp;browser.</li>
+        <li>Download the Python 3 installer for&nbsp;Windows.</li>
+        <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
+      </ol>
+    </div>
+
+
+    <div class="col-md-4">
+      <h4 id="python-macosx">Mac <span class="caps">OS</span>&nbsp;X</h4>
+      <ol>
+        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web&nbsp;browser.</li>
+        <li>Download the Python 3 installer for <span class="caps">OS</span>&nbsp;X.</li>
+        <li>Install Python 3 using all of the defaults for&nbsp;installation.</li>
+      </ol>
+      </div>
+
+    <div class="col-md-4">
+      <h4 id="python-linux">Linux</h4>
+      <ol>
+        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web&nbsp;browser.</li>
+        <li>Download the Python 3 installer for&nbsp;Linux.</li>
+        <li>Install Python 3 using all of the defaults for installation.
+        (Installation requires using the shell. If you aren&#8217;t
+        comfortable doing the installation yourself
+        stop here and request&nbsp;help.)</li>
+        <li>
+          Open a terminal&nbsp;window.
+        </li>
+        <li>
+          Type <pre>bash Anaconda-</pre> and then press
+          tab. The name of the file you just downloaded should&nbsp;appear.
+        </li>
+        <li>
+          Press enter. You will follow the text-only prompts.  When
+          there is a colon at the bottom of the screen press the down
+          arrow to move down through the text. Type <code>yes</code> and
+          press enter to approve the license. Press enter to approve the
+          default location for the files. Type <code>yes</code> and
+          press enter to prepend Anaconda to your <code>PATH</code>
+          (this makes the Anaconda distribution the default&nbsp;Python).
+        </li>
+      </ol>
+    </div>
+
+</div> <!-- End of 'Python' section. -->
+</div>
+
+<p><br></p>
+<h2>Testing</h2>
+<h3>Bash&nbsp;shell</h3>
+<p>Open a <em>terminal</em> (Mac <span class="caps">OS</span> X, Linux) or open <em>Git Bash</em> (under <em>All Programs/Git/Git Bash</em>) in&nbsp;Windows.</p>
+<p>Type</p>
+<div class="highlight"><pre><span></span>echo $SHELL
+</pre></div>
+
+
+<p>Should show <code>/bin/bash</code> or <code>/usr/bin/bash</code> (or&nbsp;similar).</p>
+<p>We use &#8220;shell&#8221; and &#8220;terminal&#8221; (and &#8220;console&#8221;) pretty&nbsp;interchangeably.</p>
+<h3>Git</h3>
+<p>In the shell,&nbsp;type</p>
+<div class="highlight"><pre><span></span>git --version
+</pre></div>
+
+
+<p>which should show something like <code>git version 2.7.0</code>.</p>
+<h3>Python</h3>
+<p>In the shell,&nbsp;type</p>
+<div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import sys; print(sys.version)&#39;</span>
+</pre></div>
+
+
+<p>which should give something similar to <code>3.5.2 |Anaconda 4.2.0 (64-bit); (default, Jul  2 2016, 17:53:06)</code> (and more stuff).
+Important: you should have <em>Python 3</em>, i.e., a version like 3.4.x or&nbsp;3.5.x.</p>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>related links</h2>
+                        <ul>
+                            <li><a href="http://becksteinlab.physics.asu.edu/">Beckstein Lab</a></li>
+                            <li><a href="http://mdanalysis.org/">MDAnalysis</a></li>
+                            <li><a href="http://datreant.org/">datreant</a></li>
+                            <li><a href="http://software-carpentry.org/">Software Carpentry</a></li>
+                            <li><a href="http://scholar.google.com/citations?user=tN3FOxgAAAAJ&hl=en">Google Scholar</a></li>
+                            <li><a href="https://www.researchgate.net/profile/David_Dotson">ResearchGate</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://smallerthings.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://twitter.com/dotsdl">Twitter</a></li>
+                            <li><a href="https://github.com/dotsdl">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/david-dotson-ph-d-8999a414">LinkedIn</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+            <p>All opinions shared on this blog are the author's, and the author's alone.</p>
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/dotsdl/pelican-bluemoon">bluemoon</a>, derived from <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>.</p>
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'smallerthings';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Automating molecular dynamics simulations across compute resources</title>
+        <link rel="stylesheet" href="http://smallerthings.org/theme/css/main.css" />
+        <link href="http://smallerthings.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="the smaller things Atom Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://smallerthings.org/">the smaller things  <strong>states & transitions</strong></a></h1>
+                <nav><ul>
+    
+                        <li><a href="http://smallerthings.org/pages/about.html">about&nbsp;me</a></li>
+    
+                        <li><a href="http://smallerthings.org/pages/notes.html">notes</a></li>
+                    <li><a href="http://smallerthings.org/category/education.html">education</a></li>
+                    <li><a href="http://smallerthings.org/category/personal.html">personal</a></li>
+                    <li class="active"><a href="http://smallerthings.org/category/science.html">science</a></li>
+                    <li><a href="http://smallerthings.org/category/software.html">software</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://smallerthings.org/drafts/2019-automating-md.html" rel="bookmark"
+           title="Permalink to Automating molecular dynamics simulations across compute resources">Automating molecular dynamics simulations across compute&nbsp;resources</a></h1>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="dotsdl">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <span>Sat 12 January 2019</span>
+<span>| tags: <a href="http://smallerthings.org/tag/automation.html">automation</a><a href="http://smallerthings.org/tag/python.html">python</a></span>
+</footer><!-- /.post-info -->      <p>In the spring of 2016, at the tail end of my PhD, my <a href="https://twitter.com/orbeckst"><span class="caps">PI</span></a> and I set out to calculate the free energy of binding for sodium ions to the protein <em>Thermus Thermophilus</em> NapA.
+This protein transports sodium ions out of the cell, and is key to <em>Thermus Themophilus</em>&#8216; survival, especially in environments of high-salinity.
+The full mechanism by which this protein does its job is not yet known, but what is known is that binding of sodium inside this protein is a key step in its transport cycle.
+Obtaining an accurate value for the strength of this binding would help to complete the thermodynamic picture for how this protein&nbsp;operates.</p>
+<p>The problem: calculating the free energy of binding with raw <a href="https://en.wikipedia.org/wiki/Molecular_dynamics">molecular dynamics simulations</a> takes an inordinate amount of sampling.
+We could count how much time a sodium ion spends bound versus how much time no ion is bound from many simulations, but the amount of time we would need to simulate to observe many binding and unbinding events for an accurate count would be&nbsp;cost-prohibitive. </p>
+<p>As an alternative to this approach, we instead performed many simulations along a so-caled <a href=""><em>alchemical</em> pathway</a> for the binding process.
+A free energy is a state function, so we can calculate the free energy of binding by taking a non-physical but entirely computable path.
+We chose a pathway such as the one shown&nbsp;below.</p>
+<p>But this pathway presents a new problem: even if it affords us the ability to calculate an accurate free energy of binding, each leg of the pathway requires running many individual simulations.
+In the approach we chose to take, we needed to execute nearly 100 individual simulations of NapA, each rather expensive if run for a very long time.
+Adding to that, we wanted to calculate binding with the protein in a few different states, totalling nearly 400&nbsp;simulations.</p>
+<p>The <em>alchemical</em> approach turned what was at first a numerical computing problem into an engineering problem, one which was in principle solvable with automation.
+In this post, I&#8217;ll be laying out the approach we took to executing hundreds of simulations efficiently across a heterogeneous set of compute resources.
+This approach is not specific to <em>alchemical</em> free energy calculations, and could be used to run any set of independent simulations across many&nbsp;machines.</p>
+<h1>How it&nbsp;works</h1>
+<h1>Setting up the central state&nbsp;store</h1>
+<h1>Generating and submitting a&nbsp;workflow</h1>
+<h1>Launching a&nbsp;worker</h1>
+<h1>Configuring and launching workers on remote&nbsp;machines</h1>
+<h1>Launching workers on <span class="caps">HPC</span>&nbsp;clusters</h1>
+<h1>Thoughts on improving this&nbsp;scheme</h1>
+    </div><!-- /.entry-content -->
+    <div class="comments">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'smallerthings';
+        (function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] ||
+             document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>
+        Please enable JavaScript to view the
+        <a href="http://disqus.com/?ref_noscript=smallerthings">
+            comments powered by Disqus.
+        </a>
+    </noscript>
+    <a href="http://disqus.com" class="dsq-brlink">
+        blog comments powered by <span class="logo-disqus">Disqus</span>
+    </a>
+    </div>
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>related links</h2>
+                        <ul>
+                            <li><a href="http://becksteinlab.physics.asu.edu/">Beckstein Lab</a></li>
+                            <li><a href="http://mdanalysis.org/">MDAnalysis</a></li>
+                            <li><a href="http://datreant.org/">datreant</a></li>
+                            <li><a href="http://software-carpentry.org/">Software Carpentry</a></li>
+                            <li><a href="http://scholar.google.com/citations?user=tN3FOxgAAAAJ&hl=en">Google Scholar</a></li>
+                            <li><a href="https://www.researchgate.net/profile/David_Dotson">ResearchGate</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://smallerthings.org/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="https://twitter.com/dotsdl">Twitter</a></li>
+                            <li><a href="https://github.com/dotsdl">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/david-dotson-ph-d-8999a414">LinkedIn</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+            <p>All opinions shared on this blog are the author's, and the author's alone.</p>
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/dotsdl/pelican-bluemoon">bluemoon</a>, derived from <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>.</p>
+        </footer><!-- /#contentinfo -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'smallerthings';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
