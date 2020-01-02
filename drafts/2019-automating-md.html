@@ -48,19 +48,44 @@ We could count how much time a sodium ion spends bound versus how much time no i
 <p>As an alternative to this approach, we instead performed many simulations along a so-caled <a href=""><em>alchemical</em> pathway</a> for the binding process.
 A free energy is a state function, so we can calculate the free energy of binding by taking a non-physical but entirely computable path.
 We chose a pathway such as the one shown&nbsp;below.</p>
+<p><img src="./images/pathway.png" alt="An alchemical free energy pathway." style="width:900px;height:375px;"> <!-- .element: class="fragment" data-fragment-index="0" --></p>
 <p>But this pathway presents a new problem: even if it affords us the ability to calculate an accurate free energy of binding, each leg of the pathway requires running many individual simulations.
 In the approach we chose to take, we needed to execute nearly 100 individual simulations of NapA, each rather expensive if run for a very long time.
 Adding to that, we wanted to calculate binding with the protein in a few different states, totalling nearly 400&nbsp;simulations.</p>
 <p>The <em>alchemical</em> approach turned what was at first a numerical computing problem into an engineering problem, one which was in principle solvable with automation.
-In this post, I&#8217;ll be laying out the approach we took to executing hundreds of simulations efficiently across a heterogeneous set of compute resources.
-This approach is not specific to <em>alchemical</em> free energy calculations, and could be used to run any set of independent simulations across many&nbsp;machines.</p>
+In this post, I&#8217;ll be laying out the approach we took to execute hundreds of simulations efficiently across a heterogeneous set of compute resources.
+This approach is not specific to alchemical free energy calculations, but could be used to run any set of independent simulations across many&nbsp;machines.</p>
 <h1>How it&nbsp;works</h1>
-<h1>Setting up the central state&nbsp;store</h1>
-<h1>Generating and submitting a&nbsp;workflow</h1>
-<h1>Launching a&nbsp;worker</h1>
-<h1>Configuring and launching workers on remote&nbsp;machines</h1>
-<h1>Launching workers on <span class="caps">HPC</span>&nbsp;clusters</h1>
+<p>We used <a href="">Fireworks</a>, a Python library for constructing and executing automated workflows expressed as <em>acyclic, directed graphs</em>.
+When running simulations by hand, one might follow a recipe like the one shown below, where rectangles represent tasks and arrows represent the flow of effort and dependency between&nbsp;tasks.</p>
+<!-- figure here-->
+
+<p>In designing an <em>automated</em> workflow, we can rewrite this recipe into the tasks a computer must perform instead, perhaps something&nbsp;like:</p>
+<!-- figure here-->
+
+<p>With Fireworks, each task in this workflow could in principle be performed by a different machine.
+If we design our workflow around this consideration, in particular for the <code>md</code> task, we could then use whatever machines we have at our disposal to execute the simulation task of the workflow and leave the other tasks for a central&nbsp;fileserver.</p>
+<!-- figure here giving diagram of fileserver and many external compute resources-->
+
+<p>We&#8217;ll add a <code>staging</code> task that pushes the files necessary to run the simulation to all machines that <em>might</em> run it, and we&#8217;ll add a <code>pull</code> and <code>cleanup</code> task for the fileserver to&nbsp;execute.</p>
+<!-- figure here, color coded by what machine we imagine will run each task-->
+
+<p>We have now put our simulation steps in terms that our resources can execute autonomously.
+Next we&#8217;ll get into <em>how</em> this execution is coordinated, followed by an example for how to set up the required&nbsp;infrastructure.</p>
+<h1>Fireworks execution&nbsp;architecture</h1>
+<p>Once we&#8217;ve created a workflow (which we&#8217;ll actually do programmatically in a later section),&nbsp;we </p>
+<h1>Death by detail: how to get up and&nbsp;running</h1>
+<p>Fair warning up front: Fireworks is a <em>distributed system framework</em>, and like most such frameworks setup requires dealing with the details of the machines portions of your work execute on.
+Remote machines you have access to may not be able to talk to your MongoDB database if they are behind a restrictive&nbsp;firewall, </p>
+<h2>Setting up the central state&nbsp;store</h2>
+<h2>Generating and submitting a&nbsp;workflow</h2>
+<h2>Launching a&nbsp;worker</h2>
+<h2>Configuring and launching workers on remote&nbsp;machines</h2>
+<h2>Launching workers on <span class="caps">HPC</span>&nbsp;clusters</h2>
+<h2>Handling&nbsp;failures</h2>
+<h1>Self-propogating <span class="caps">MD</span>&nbsp;workflows</h1>
 <h1>Thoughts on improving this&nbsp;scheme</h1>
+<p>Systems engineering; simpler is&nbsp;better.</p>
     </div><!-- /.entry-content -->
     <div class="comments">
     <h2>Comments</h2>
